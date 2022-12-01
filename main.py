@@ -6,7 +6,6 @@ from PyQt5.QtWidgets import *
 from loguru import logger
 
 
-
 class Ui(QtWidgets.QMainWindow):
 
     def __init__(self):
@@ -192,9 +191,6 @@ class Ui(QtWidgets.QMainWindow):
         try:
             table = self.table_medics_history
 
-
-
-
             label = self.findChild(QtWidgets.QLabel, "label_24")
             name = self.list_query_igel_2.currentItem().text()
             igel = session.query(Igel).filter_by(name=name).first()
@@ -228,10 +224,9 @@ class Ui(QtWidgets.QMainWindow):
 
                 d += 1
 
-
-
             label.setText(igel.name)
-        except: print("fehler")
+        except:
+            print("fehler")
 
         # i = 0
         # for(k, v) in enumerate(res):
@@ -241,7 +236,7 @@ class Ui(QtWidgets.QMainWindow):
         #     table.setItem(i, 1, date)
         #     #i += 1
 
-        #pprint(res)
+        # pprint(res)
 
     def delete_igel(self):
         name = self.label_update_igel_name.text()
@@ -346,11 +341,13 @@ class Ui(QtWidgets.QMainWindow):
 
             take_medics(name=name, medicid=medic.id)
             self.query_selected_igel_take_medics()
-        except: print("fehler")
+        except:
+            print("fehler")
 
     def none(self):
 
         return None
+
 
 logger.add("hedgehoggalaxy.log", retention="10 days")
 app = QtWidgets.QApplication(sys.argv)
