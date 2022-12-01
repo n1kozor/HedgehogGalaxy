@@ -4,9 +4,7 @@ from pprint import pprint
 from database.models import *
 from PyQt5.QtWidgets import *
 from loguru import logger
-def none():
 
-    return None
 
 
 class Ui(QtWidgets.QMainWindow):
@@ -349,6 +347,10 @@ class Ui(QtWidgets.QMainWindow):
             take_medics(name=name, medicid=medic.id)
             self.query_selected_igel_take_medics()
         except: print("fehler")
+
+    def none(self):
+
+        return None
 
 logger.add("hedgehoggalaxy.log", retention="10 days")
 app = QtWidgets.QApplication(sys.argv)
