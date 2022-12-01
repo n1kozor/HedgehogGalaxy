@@ -132,12 +132,12 @@ QLineEdit:focus
        <rect>
         <x>490</x>
         <y>10</y>
-        <width>121</width>
+        <width>231</width>
         <height>61</height>
        </rect>
       </property>
       <property name="text">
-       <string>Igel Medikamenten</string>
+       <string>Igel Medikamenten, nom nom nom</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_26">
@@ -223,7 +223,7 @@ font-size: 10px;}</string>
      <number>1</number>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page_new_igel">
      <widget class="QLabel" name="label">
