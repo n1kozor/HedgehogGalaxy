@@ -192,7 +192,7 @@ QLineEdit:focus
       <x>280</x>
       <y>110</y>
       <width>831</width>
-      <height>531</height>
+      <height>501</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -227,7 +227,14 @@ QComboBox{
 border: 1px solid gray;
 border-radius: 10px;
 padding: 0 8px;
-font-size: 10px;}</string>
+font-size: 10px;}
+
+QTableWidget{ 
+background-color:white;
+border: 1px solid gray;
+border-radius: 10px;
+padding: 0 8px;
+font-size: 16px;}</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -1082,21 +1089,24 @@ font-size: 16px;}
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>0</y>
+        <y>10</y>
         <width>231</width>
         <height>41</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="text">
-       <string>Aktualisieren</string>
+       <string>Igeliste aktualisieren</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_18">
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>80</y>
-        <width>61</width>
+        <y>110</y>
+        <width>71</width>
         <height>20</height>
        </rect>
       </property>
@@ -1108,7 +1118,7 @@ font-size: 16px;}
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>150</y>
+        <y>140</y>
         <width>231</width>
         <height>341</height>
        </rect>
@@ -1126,10 +1136,13 @@ font-size: 16px;}</string>
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>110</y>
+        <y>60</y>
         <width>231</width>
         <height>41</height>
        </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>Igel abfragen</string>
@@ -1138,8 +1151,8 @@ font-size: 16px;}</string>
      <widget class="QLineEdit" name="in_igel_query_filter_2">
       <property name="geometry">
        <rect>
-        <x>92</x>
-        <y>80</y>
+        <x>90</x>
+        <y>110</y>
         <width>161</width>
         <height>20</height>
        </rect>
@@ -1149,9 +1162,9 @@ font-size: 16px;}</string>
       <property name="geometry">
        <rect>
         <x>290</x>
-        <y>150</y>
-        <width>451</width>
-        <height>341</height>
+        <y>180</y>
+        <width>361</width>
+        <height>301</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1173,26 +1186,13 @@ font-size: 16px;}</string>
        <number>60</number>
       </attribute>
      </widget>
-     <widget class="QPushButton" name="btn_query_medics_igel">
-      <property name="geometry">
-       <rect>
-        <x>80</x>
-        <y>490</y>
-        <width>91</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Abfragen</string>
-      </property>
-     </widget>
      <widget class="QListWidget" name="list_add_medic_to_igel">
       <property name="geometry">
        <rect>
         <x>290</x>
-        <y>10</y>
+        <y>50</y>
         <width>191</width>
-        <height>131</height>
+        <height>121</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1207,11 +1207,14 @@ font-size: 16px;}</string>
      <widget class="QPushButton" name="btn_add_medic_to_selected_igel">
       <property name="geometry">
        <rect>
-        <x>510</x>
-        <y>10</y>
+        <x>500</x>
+        <y>70</y>
         <width>181</width>
         <height>31</height>
        </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>Medikamente Einnahme Bestätigen</string>
@@ -1220,14 +1223,20 @@ font-size: 16px;}</string>
      <widget class="QLabel" name="label_24">
       <property name="geometry">
        <rect>
-        <x>510</x>
-        <y>50</y>
-        <width>271</width>
-        <height>21</height>
+        <x>280</x>
+        <y>10</y>
+        <width>191</width>
+        <height>31</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 20px;</string>
+      </property>
       <property name="text">
-       <string/>
+       <string>Igel Name</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
       </property>
      </widget>
     </widget>

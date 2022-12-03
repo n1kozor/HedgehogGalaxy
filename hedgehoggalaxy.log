@@ -9,3 +9,11 @@
 2022-12-01 21:03:11.290 | DEBUG    | __main__:__init__:111 - Programm wurde erfolgreich initialisiert.
 2022-12-01 21:03:15.005 | DEBUG    | __main__:delete_igel:254 - Ige mit Namen: Sonic wurde erfolgreich gelöscht
 2022-12-01 21:03:20.248 | DEBUG    | __main__:delete_igel:254 - Ige mit Namen: Kukika wurde erfolgreich gelöscht
+2022-12-01 22:18:32.065 | DEBUG    | __main__:__init__:111 - Programm wurde erfolgreich initialisiert.
+2022-12-01 22:19:22.843 | DEBUG    | __main__:__init__:111 - Programm wurde erfolgreich initialisiert.
+2022-12-03 18:55:31.262 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 18:56:19.081 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:08:12.929 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:10:25.313 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:14:36.609 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:16:27.515 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.

@@ -5,8 +5,8 @@ from sqlalchemy.sql import func
 from sqlalchemy import create_engine
 from sqlalchemy_utils import database_exists, create_database
 
-engine = create_engine('mysql://root:@localhost/hgalaxy')
-#engine = create_engine('sqlite:///igels.db', echo=True)
+#engine = create_engine('mysql://root:@localhost/hgalaxy')
+engine = create_engine('sqlite:///igels.db', echo=True)
 
 Base = declarative_base()
 
