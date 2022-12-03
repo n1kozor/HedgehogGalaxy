@@ -108,13 +108,13 @@ class Ui(QtWidgets.QMainWindow):
                                     Igel Medics Page
         """
         self.list_query_igel_2 = self.findChild(QtWidgets.QListWidget, "list_query_igel_2")
+        self.list_query_igel_2.clicked.connect(self.query_selected_igel_take_medics)
         self.btn_query_all_igel_2 = self.findChild(QtWidgets.QPushButton, "btn_query_all_igel_2")
         self.btn_query_all_igel_2.clicked.connect(MedicsHedgehog.query_all_hedgehog_to_list_medics(self))
         self.in_igel_query_filter_2 = self.findChild(QtWidgets.QLineEdit, "in_igel_query_filter_2")
         self.btn_query_selected_igel_2 = self.findChild(QtWidgets.QPushButton, "btn_query_selected_igel_2")
         self.btn_query_selected_igel_2.clicked.connect(MedicsHedgehog.query_selected_hedgehog_to_list_medics(self))
         self.btn_query_medics_igel = self.findChild(QtWidgets.QPushButton, "btn_query_medics_igel")
-        self.btn_query_medics_igel.clicked.connect(self.query_selected_igel_take_medics)
         self.table_medics_history = self.findChild(QtWidgets.QTableWidget, "table_medics_history")
         self.list_add_medic_to_igel = self.findChild(QtWidgets.QListWidget, "list_add_medic_to_igel")
         self.btn_add_medic_to_selected_igel = self.findChild(QtWidgets.QPushButton, "btn_add_medic_to_selected_igel")
