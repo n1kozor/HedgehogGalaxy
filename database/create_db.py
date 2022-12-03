@@ -33,5 +33,5 @@ Base.metadata.create_all(engine)
 
 # Fill Tables with Medics and Diseases
 
-init_db_medics()
-init_db_diseases()
+# init_db_medics()
+# init_db_diseases()

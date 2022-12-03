@@ -61,4 +61,38 @@ class InitMethods:
             take()
             query = InitMethods.query_all_hedgehog_to_list(ui)
             query()
+
         return show_update_hedgehog_page_ui
+
+    @staticmethod
+    def show_query_hedgehog_page(ui):
+        def show_query_hedgehog_page_ui():
+            ui.manage_pages.setCurrentIndex(1)
+
+        return show_query_hedgehog_page_ui
+
+    @staticmethod
+    def take_diseases_to_igel_diseases(ui):
+        def take_diseases_to_igel_diseases_ui():
+            index = ui.list_new_disease.currentRow()
+            disease_list = ui.list_new_disease.currentItem()
+            try:
+                ui.list_new_disease.takeItem(index)
+                ui.list_new_disease_to_igel.addItem(disease_list.text())
+            except:
+                pass
+
+        return take_diseases_to_igel_diseases_ui
+
+    @staticmethod
+    def take_diseases_from_igel_to_diseases(ui):
+        def take_diseases_from_igel_to_diseases_ui():
+            index = ui.list_new_disease_to_igel.currentRow()
+            disease_list = ui.list_new_disease_to_igel.currentItem()
+            try:
+                ui.list_new_disease_to_igel.takeItem(index)
+                ui.list_new_disease.addItem(disease_list.text())
+            except:
+                pass
+
+        return take_diseases_from_igel_to_diseases_ui

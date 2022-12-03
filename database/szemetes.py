@@ -28,3 +28,8 @@ print(f"{igel.name} hat bis jetzt folgende Medikamenten eingenommen: {medic_list
 """
 
 
+# def query_all_igel_to_list(self):
+#     self.list_query_igel.clear()
+#     m = session.query(Igel).all()
+#     for i in m:
+#         self.list_query_igel.addItem(i.name)

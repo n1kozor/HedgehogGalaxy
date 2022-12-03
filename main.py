@@ -10,6 +10,7 @@ from control.new_hedgehog import NewHedgehog
 from control.init_methods import InitMethods
 from control.update_hedgehog import UpdateHedgehog
 from control.delete_hedgehog import DeleteHedgehog
+from control.medics_hedgehog import MedicsHedgehog
 
 
 class Ui(QtWidgets.QMainWindow):
@@ -21,19 +22,21 @@ class Ui(QtWidgets.QMainWindow):
                         Init Methods ( Insert to lists etc.... )
         """
         self.init_disease = InitMethods.query_all_diseases(self)
-        self.init_disease() # Init all diseases to lists
+        self.init_disease()  # Init all diseases to lists
+
         self.init_medics = InitMethods.query_all_medics(self)
-        self.init_medics() # Init all medics to lists
-        
+        self.init_medics()  # Init all medics to lists
+
         self.init_hedgehog_list = InitMethods.query_all_hedgehog_to_list(self)
-        self.init_hedgehog_list()
+        self.init_hedgehog_list()  # Init all hedgehog to list
 
+        self.init_hedgehog_list_to_medic_list = MedicsHedgehog.query_all_hedgehog_to_list_medics(self)
+        self.init_hedgehog_list_to_medic_list()  # Init all hedgehog to list in medics page
 
-        self.query_all_igel_to_list_medics()
         self.btn_new_igel = self.findChild(QtWidgets.QPushButton, 'btn_new_igel')
         self.btn_new_igel.clicked.connect(InitMethods.show_new_hedgehog_page(self))
         self.btn_query_igel = self.findChild(QtWidgets.QPushButton, 'btn_query_igel')
-        self.btn_query_igel.clicked.connect(self.show_query_igel_page)
+        self.btn_query_igel.clicked.connect(InitMethods.show_query_hedgehog_page(self))
         self.btn_medics_igel = self.findChild(QtWidgets.QPushButton, 'btn_medics_igel')
         self.btn_medics_igel.clicked.connect(InitMethods.show_medics_hedgehog_page(self))
         self.manage_pages = self.findChild(QtWidgets.QStackedWidget, "manage_pages")
@@ -43,8 +46,9 @@ class Ui(QtWidgets.QMainWindow):
                             Add New Igel
         """
         self.in_new_igel_time = self.findChild(QtWidgets.QDateEdit, "in_new_igel_time")
-        self.in_new_igel_sex = self.findChild(QtWidgets.QComboBox, "in_new_igel_sex")
+        self.in_new_igel_contact = self.findChild(QtWidgets.QLineEdit, "in_new_igel_contact")
         self.in_new_igel_local = self.findChild(QtWidgets.QLineEdit, "in_new_igel_local")
+        self.in_new_igel_sex = self.findChild(QtWidgets.QComboBox, "in_new_igel_sex")
         self.in_new_igel_name = self.findChild(QtWidgets.QLineEdit, "in_new_igel_name")
         self.in_new_igel_age = self.findChild(QtWidgets.QLineEdit, "in_new_igel_age")
         self.in_new_igel_disease = self.findChild(QtWidgets.QLineEdit, "in_new_igel_disease")
@@ -53,13 +57,13 @@ class Ui(QtWidgets.QMainWindow):
         self.btn_add_new_disease = self.findChild(QtWidgets.QPushButton, "btn_add_new_disease")
         self.btn_add_new_disease.clicked.connect(NewHedgehog.add_new_igel_disease(self))
         self.list_new_disease = self.findChild(QtWidgets.QListWidget, "list_new_disease")
-        self.list_new_disease.itemDoubleClicked.connect(self.take_diseases_to_igel_diseases)
+        self.list_new_disease.itemDoubleClicked.connect(InitMethods.take_diseases_to_igel_diseases(self))
         self.list_new_disease_to_igel = self.findChild(QtWidgets.QListWidget, "list_new_disease_to_igel")
-        self.list_new_disease_to_igel.itemDoubleClicked.connect(self.take_diseases_from_igel_to_diseases)
+        self.list_new_disease_to_igel.itemDoubleClicked.connect(InitMethods.take_diseases_from_igel_to_diseases(self))
         self.btn_disease_to_igel = self.findChild(QtWidgets.QPushButton, "btn_disease_to_igel")
-        self.btn_disease_to_igel.clicked.connect(self.take_diseases_to_igel_diseases)
+        self.btn_disease_to_igel.clicked.connect(InitMethods.take_diseases_to_igel_diseases(self))
         self.btn_igel_to_disease = self.findChild(QtWidgets.QPushButton, "btn_igel_to_disease")
-        self.btn_igel_to_disease.clicked.connect(self.take_diseases_from_igel_to_diseases)
+        self.btn_igel_to_disease.clicked.connect(InitMethods.take_diseases_from_igel_to_diseases(self))
         """
                             Status ( right side, main Window ) itemDoubleClicked.connect
         """
@@ -72,7 +76,7 @@ class Ui(QtWidgets.QMainWindow):
         self.btn_query_all_igel.clicked.connect(InitMethods.query_all_hedgehog_to_list(self))
         self.in_igel_query_filter = self.findChild(QtWidgets.QLineEdit, "in_igel_query_filter")
         self.btn_query_selected_igel = self.findChild(QtWidgets.QPushButton, "btn_query_selected_igel")
-        self.btn_query_selected_igel.clicked.connect(self.query_selected_igel_to_list)
+        self.btn_query_selected_igel.clicked.connect(UpdateHedgehog.query_selected_igel_to_list(self))
         self.label_query_profil_name = self.findChild(QtWidgets.QLabel, "profil_name")
         self.label_query_profil_sex = self.findChild(QtWidgets.QLabel, "profil_sex")
         self.label_query_profil_age = self.findChild(QtWidgets.QLabel, "profil_age")
@@ -105,10 +109,10 @@ class Ui(QtWidgets.QMainWindow):
         """
         self.list_query_igel_2 = self.findChild(QtWidgets.QListWidget, "list_query_igel_2")
         self.btn_query_all_igel_2 = self.findChild(QtWidgets.QPushButton, "btn_query_all_igel_2")
-        self.btn_query_all_igel_2.clicked.connect(self.query_all_igel_to_list_medics)
+        self.btn_query_all_igel_2.clicked.connect(MedicsHedgehog.query_all_hedgehog_to_list_medics(self))
         self.in_igel_query_filter_2 = self.findChild(QtWidgets.QLineEdit, "in_igel_query_filter_2")
         self.btn_query_selected_igel_2 = self.findChild(QtWidgets.QPushButton, "btn_query_selected_igel_2")
-        self.btn_query_selected_igel_2.clicked.connect(self.query_selected_igel_to_list_medics)
+        self.btn_query_selected_igel_2.clicked.connect(MedicsHedgehog.query_selected_hedgehog_to_list_medics(self))
         self.btn_query_medics_igel = self.findChild(QtWidgets.QPushButton, "btn_query_medics_igel")
         self.btn_query_medics_igel.clicked.connect(self.query_selected_igel_take_medics)
         self.table_medics_history = self.findChild(QtWidgets.QTableWidget, "table_medics_history")
@@ -117,43 +121,16 @@ class Ui(QtWidgets.QMainWindow):
         self.btn_add_medic_to_selected_igel.clicked.connect(UpdateHedgehog.add_medic_to_hedgehog(self))
 
         """
-                                            Status / History List LENT
+                                    Status / History List LENT
         """
 
         self.history_list = self.findChild(QtWidgets.QListWidget, "history_list")
         self.history_list.setSelectionRectVisible(True)
 
-
-
-
         self.show()
-
 
         logger.debug("Programm wurde erfolgreich initialisiert.")
 
-
-
-
-    def query_all_igel_to_list_medics(self):
-        self.list_query_igel_2.clear()
-        m = session.query(Igel).all()
-        for i in m:
-            self.list_query_igel_2.addItem(i.name)
-
-    def query_all_igel_to_list(self):
-        self.list_query_igel.clear()
-        m = session.query(Igel).all()
-        for i in m:
-            self.list_query_igel.addItem(i.name)
-
-    def query_selected_igel_to_list(self):
-        self.list_query_igel.clear()
-        name = self.in_igel_query_filter.text()
-        try:
-            m = session.query(Igel).filter_by(name=name).first()
-            self.list_query_igel.addItem(m.name)
-        except:
-            self.status_label.setText(f"Igel mit Name {name} wurde nicht in Datenbank gefunden!")
 
     def query_selected_igel_take_medics(self):
         try:
@@ -197,54 +174,16 @@ class Ui(QtWidgets.QMainWindow):
         except:
             print("fehler")
 
-        # i = 0
-        # for(k, v) in enumerate(res):
-        #     med = QTableWidgetItem(k)
-        #     date = QTableWidgetItem(str(v))
-        #     table.setItem(i, 0, med)
-        #     table.setItem(i, 1, date)
-        #     #i += 1
-
-        # pprint(res)
-
-    def query_selected_igel_to_list_medics(self):
-        self.list_query_igel_2.clear()
-        name = self.in_igel_query_filter_2.text()
-        try:
-            m = session.query(Igel).filter_by(name=name).first()
-            self.list_query_igel_2.addItem(m.name)
-        except:
-            self.status_label.setText(f"Igel mit Name {name} wurde nicht in Datenbank gefunden!")
-
-    def show_query_igel_page(self):
-        self.manage_pages.setCurrentIndex(1)
-        InitMethods.query_all_hedgehog_to_list(self)
-
 
     def save_new_disease(self):
         var = None
 
-    def take_diseases_to_igel_diseases(self):
-        index = self.list_new_disease.currentRow()
-        disease_list = self.list_new_disease.currentItem()
-        try:
-            self.list_new_disease.takeItem(index)
-            self.list_new_disease_to_igel.addItem(disease_list.text())
-        except:
-            pass
-
-    def take_diseases_from_igel_to_diseases(self):
-        index = self.list_new_disease_to_igel.currentRow()
-        disease_list = self.list_new_disease_to_igel.currentItem()
-        try:
-            self.list_new_disease_to_igel.takeItem(index)
-            self.list_new_disease.addItem(disease_list.text())
-        except:
-            pass
 
     def none(self):
 
         return None
+
+
 
 
 logger.add("hedgehoggalaxy.log", retention="10 days")

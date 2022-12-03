@@ -78,5 +78,16 @@ class UpdateHedgehog:
             ui.label_query_profil_description.setText(s.description)
         return show_hedgehog_profil_ui
 
+    @staticmethod
+    def query_selected_igel_to_list(ui):
+        def query_selected_igel_to_list_ui():
+            ui.list_query_igel.clear()
+            name = ui.in_igel_query_filter.text()
+            try:
+                m = session.query(Igel).filter_by(name=name).first()
+                ui.list_query_igel.addItem(m.name)
+            except:
+                ui.status_label.setText(f"Igel mit Name {name} wurde nicht in Datenbank gefunden!")
 
+        return query_selected_igel_to_list_ui
 

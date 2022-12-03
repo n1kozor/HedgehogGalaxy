@@ -41,6 +41,7 @@ class Igel(Base):
     medics = relationship("Medics", secondary=medics_igel, back_populates="igel")
     diet = Column(String(255))
     contacts = Column(String(255))
+    local = Column(String(255))
     description = Column(String(255))
 
 class IgelHistory(Base):
@@ -81,6 +82,13 @@ class MedicsIgelHistroy(Base):
     igel_id = Column(Integer)
     medics_id = Column(Integer)
     take_time = Column(DateTime(timezone=True), server_default=func.now())
+
+
+
+
+
+
+
 
 
 Session = sessionmaker(bind=engine)
