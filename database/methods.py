@@ -14,8 +14,11 @@ def add_new_igel(name=str, sex=str, age=str, weight=str, description=str):
 
         return True
 
-def add_new_igel_to_history(name=str, sex=str, age=str, weight=str, description=str, diseases=str):
-    new_igel = IgelHistory(name=name, sex=sex, age=age, weight=weight, description=description, diseases=diseases)
+def add_new_igel_to_history(name=str, sex=str, age=str, weight=str, description=str,
+                            diseases=str, contacts=str):
+
+    new_igel = IgelHistory(name=name, sex=sex, age=age, weight=weight, description=description,
+                           diseases=diseases, contacts=contacts)
     session.add(new_igel)
     session.commit()
 

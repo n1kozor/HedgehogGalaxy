@@ -12,12 +12,15 @@ class NewHedgehog:
             disease = ui.list_new_disease_to_igel
             local = ui.in_new_igel_local.text()
             contacts = ui.in_new_igel_contact.text()
+            status = ui.in_new_igel_status.currentText()
             s = bool(session.query(Igel).filter_by(name=name).first())
             if s is True:
                 QMessageBox.about(ui, "Information", f"Igel mit Namen: {name} ist bereits im Datenbank!")
 
             else:
-                new_igel = Igel(name=name, sex=sex, age=age, weight=weight, description=description, local=local, contacts=contacts)
+                new_igel = Igel(name=name, sex=sex, age=age, weight=weight, description=description, local=local,
+                                contacts=contacts, status=status)
+
                 itemsTextList = [str(disease.item(i).text()) for i in range(disease.count())]
                 for u in itemsTextList:
                     krankhnt = session.query(Disease).filter_by(name=u).first()

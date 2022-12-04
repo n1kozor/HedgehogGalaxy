@@ -81,10 +81,13 @@ class InitMethods:
             ui.label_query_profil_name.clear()
             ui.label_query_profil_age.clear()
             ui.label_query_profil_local.clear()
+            ui.label_igel_status.clear()
+            ui.label_igel_status.setStyleSheet("color: white; background-color: transparent")
             ui.label_query_profil_sex.clear()
             ui.label_query_profil_weight.clear()
             ui.list_query_profil_disease.clear()
             ui.list_query_igel.clear()
+            ui.label_query_profil_contacts.clear()
             m = session.query(Igel).all()
             for i in m:
                 ui.list_query_igel.addItem(i.name)

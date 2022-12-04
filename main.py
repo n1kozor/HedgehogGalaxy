@@ -21,6 +21,7 @@ class Ui(QtWidgets.QMainWindow):
     def __init__(self):
         super(Ui, self).__init__()
         uic.loadUi('libary\hgalaxy.ui', self)
+        self.manage_pages.setCurrentIndex(2)
         """
                         Init Methods ( Insert to lists etc.... )
         """
@@ -70,6 +71,8 @@ class Ui(QtWidgets.QMainWindow):
         self.btn_disease_to_igel.clicked.connect(InitMethods.take_diseases_to_igel_diseases(self))
         self.btn_igel_to_disease = self.findChild(QtWidgets.QPushButton, "btn_igel_to_disease")
         self.btn_igel_to_disease.clicked.connect(InitMethods.take_diseases_from_igel_to_diseases(self))
+        self.in_new_igel_status = self.findChild(QtWidgets.QComboBox, "in_new_igel_status")
+
         """
                             Status ( right side, main Window ) itemDoubleClicked.connect
         """
@@ -92,6 +95,7 @@ class Ui(QtWidgets.QMainWindow):
         self.label_query_profil_description = self.findChild(QtWidgets.QLabel, "profil_description")
         self.btn_update_igel = self.findChild(QtWidgets.QPushButton, "btn_update_igel")
         self.btn_update_igel.clicked.connect(InitMethods.show_update_hedgehog_page(self))
+        self.label_igel_status = self.findChild(QtWidgets.QLabel, "label_igel_status")
 
         """
                                     Igel Update Page
@@ -108,7 +112,7 @@ class Ui(QtWidgets.QMainWindow):
         self.btn_delete_igel = self.findChild(QtWidgets.QPushButton, "btn_delete_igel")
         self.btn_delete_igel.clicked.connect(DeleteHedgehog.delete_hedgehog(self))
         self.list_update_diseases = self.findChild(QtWidgets.QListWidget, "list_update_diseases")
-        QMessageBox.about(self, "Titel", "Message")
+        self.in_update_igel_status = self.findChild(QtWidgets.QComboBox, "in_update_igel_status")
         """
                                     Igel Medics Page
         """
@@ -155,11 +159,12 @@ class Ui(QtWidgets.QMainWindow):
         self.btn_admin_create_db = self.findChild(QtWidgets.QPushButton, "btn_admin_create_db")
         self.btn_admin_create_db.clicked.connect(admin_db_init)
         self.show()
-
+        self.setFixedSize(1379, 765)
         logger.debug("Programm wurde erfolgreich initialisiert.")
         self.init_list.addItem("Datenbank wird kontrolliert....")
         self.init_list.addItem("Anwendung wird initalisiert....")
         self.init_list.addItem("Keine Fehler gefunden!")
+
 
 
     def query_selected_igel_take_medics(self):

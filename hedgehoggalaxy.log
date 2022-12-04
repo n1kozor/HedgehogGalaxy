@@ -423,3 +423,39 @@
 2022-12-04 19:21:06.019 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
 2022-12-04 19:22:19.144 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
 2022-12-04 19:22:30.704 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:19 - Ige mit Namen:  wurde erfolgreich gelöscht
+2022-12-04 19:24:39.150 | DEBUG    | __main__:__init__:158 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:25:29.494 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:29:10.010 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:46 - Igel: Sonic hat Vitamine genommen!
+2022-12-04 19:29:47.853 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Milben wurde erfolgreich gelöscht
+2022-12-04 19:30:12.987 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Schnupfen wurde erfolgreich gelöscht
+2022-12-04 19:40:40.323 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:41:59.172 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:42:30.098 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:46 - Igel: Joska hat Entwurmung genommen!
+2022-12-04 19:42:31.120 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:46 - Igel: Joska hat Vitamine genommen!
+2022-12-04 19:51:16.345 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:19 - Ige mit Namen: Joska wurde erfolgreich gelöscht
+2022-12-04 19:54:01.004 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 20:25:30.776 | DEBUG    | __main__:__init__:161 - Programm wurde erfolgreich initialisiert.
+2022-12-04 20:29:49.000 | DEBUG    | __main__:__init__:162 - Programm wurde erfolgreich initialisiert.
+2022-12-04 20:30:11.296 | DEBUG    | __main__:__init__:162 - Programm wurde erfolgreich initialisiert.
+2022-12-04 20:30:20.109 | DEBUG    | __main__:__init__:162 - Programm wurde erfolgreich initialisiert.
+2022-12-04 20:32:40.834 | DEBUG    | __main__:__init__:162 - Programm wurde erfolgreich initialisiert.
+2022-12-04 20:32:55.323 | DEBUG    | __main__:__init__:162 - Programm wurde erfolgreich initialisiert.
+2022-12-04 20:33:37.331 | DEBUG    | __main__:__init__:162 - Programm wurde erfolgreich initialisiert.
+2022-12-04 20:35:30.979 | DEBUG    | __main__:__init__:162 - Programm wurde erfolgreich initialisiert.
+2022-12-04 20:37:52.437 | DEBUG    | __main__:__init__:162 - Programm wurde erfolgreich initialisiert.
+2022-12-04 20:46:09.106 | DEBUG    | __main__:__init__:162 - Programm wurde erfolgreich initialisiert.
+2022-12-04 20:46:27.957 | DEBUG    | __main__:__init__:162 - Programm wurde erfolgreich initialisiert.
+2022-12-04 20:54:57.040 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:46 - Igel: Hugo hat Vitamine genommen!
+2022-12-04 20:54:58.063 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:46 - Igel: Hugo hat Entwurmung genommen!
+2022-12-04 20:54:59.573 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:46 - Igel: Hugo hat Aufbaumittel genommen!
+2022-12-04 20:59:24.821 | DEBUG    | __main__:__init__:163 - Programm wurde erfolgreich initialisiert.
+2022-12-04 21:02:10.611 | DEBUG    | __main__:__init__:163 - Programm wurde erfolgreich initialisiert.
+2022-12-04 21:04:06.143 | DEBUG    | __main__:__init__:163 - Programm wurde erfolgreich initialisiert.
+2022-12-04 21:05:35.113 | DEBUG    | __main__:__init__:163 - Programm wurde erfolgreich initialisiert.
+2022-12-04 21:05:43.344 | DEBUG    | __main__:__init__:163 - Programm wurde erfolgreich initialisiert.
+2022-12-04 21:06:35.888 | DEBUG    | __main__:__init__:163 - Programm wurde erfolgreich initialisiert.
+2022-12-04 21:08:39.340 | DEBUG    | __main__:__init__:163 - Programm wurde erfolgreich initialisiert.
+2022-12-04 21:11:19.000 | DEBUG    | __main__:__init__:163 - Programm wurde erfolgreich initialisiert.
+2022-12-04 21:12:04.960 | DEBUG    | __main__:__init__:163 - Programm wurde erfolgreich initialisiert.
+2022-12-04 21:12:22.585 | DEBUG    | __main__:__init__:163 - Programm wurde erfolgreich initialisiert.
+2022-12-04 21:13:14.970 | DEBUG    | __main__:__init__:163 - Programm wurde erfolgreich initialisiert.

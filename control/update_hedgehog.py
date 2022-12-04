@@ -14,7 +14,8 @@ class UpdateHedgehog:
                 name = ui.label_update_igel_name.text()
                 igel = session.query(Igel).filter_by(name=name).first()
                 add_new_igel_to_history(name=igel.name, sex=igel.sex, age=igel.age,
-                                        weight=igel.weight, description=igel.description, diseases=diseases)
+                                        weight=igel.weight, description=igel.description,
+                                        diseases=igel.diseases, contacts=igel.contacts)
                 """
                 Krankheiten to History Hedgehog
                 """
@@ -24,6 +25,7 @@ class UpdateHedgehog:
                 igel.age = ui.in_update_igel_age.text()
                 igel.description = ui.in_update_igel_description.text()
                 igel.weight = ui.in_update_igel_weight.text()
+                igel.status = ui.in_update_igel_status.currentText()
 
                 session.commit()
                 ui.history_list.addItem(f"Igel: {name} wurde aktualisiert!")
@@ -52,8 +54,6 @@ class UpdateHedgehog:
     @staticmethod
     def take_hedgehog_profil_to_update_page(ui):
         def take_hedgehog_profil_to_update_page_ui():
-            ui.in_update_igel_sex.setDisabled(True)
-            ui.in_update_igel_local.setDisabled(True)
             disease_list = []
             name = ui.list_query_igel.currentItem().text()
             igel = session.query(Igel).filter_by(name=name).first()
@@ -90,6 +90,16 @@ class UpdateHedgehog:
             for x in disease_list:
                 ui.list_query_profil_disease.addItem(x)
             ui.label_query_profil_description.setText(s.description)
+            if s.status == "An der Station":
+                ui.label_igel_status.setText(s.status)
+                ui.label_igel_status.setStyleSheet("color: white; background-color: rgb(255, 112, 112);")
+            elif s.status == "An externer Pflegestelle":
+                ui.label_igel_status.setText(s.status)
+                ui.label_igel_status.setStyleSheet("color: black; background-color:yellow;")
+            elif s.status == "Wurde entlasstet":
+                ui.label_igel_status.setText(s.status)
+                ui.label_igel_status.setStyleSheet("color: white; background-color:green;")
+
         return show_hedgehog_profil_ui
 
     @staticmethod

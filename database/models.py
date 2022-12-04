@@ -43,6 +43,7 @@ class Igel(Base):
     contacts = Column(String(255))
     local = Column(String(255))
     description = Column(String(255))
+    status = Column(String(255))
 
 class IgelHistory(Base):
     __tablename__ = 'igel_history'
