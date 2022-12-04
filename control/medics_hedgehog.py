@@ -24,3 +24,33 @@ class MedicsHedgehog:
                 ui.status_label.setText(f"Igel mit Name {name} wurde nicht in Datenbank gefunden!")
 
         return query_selected_hedgehog_to_list_medics_ui
+
+    @staticmethod
+    def delete_medics_in_medics_page(ui):
+        def delete_medics_in_medics_page_ui():
+            name = ui.list_medics_new.currentItem().text()
+            medic = session.query(Medics).filter_by(name=name).first()
+
+            session.delete(medic)
+            session.commit()
+            listItems = ui.list_medics_new.selectedItems()
+            if not listItems: return
+            for item in listItems:
+                ui.list_medics_new.takeItem(ui.list_medics_new.row(item))
+
+        return delete_medics_in_medics_page_ui
+
+    @staticmethod
+
+    def add_new_medic_in_medic_page(ui):
+        def add_new_medic_in_medic_page_ui():
+            list = ui.list_medics_new
+            input = ui.in_new_medics_in_medics_page.text()
+            list.addItem(input)
+            new_medic = Medics(name=input)
+            session.add(new_medic)
+            session.commit()
+            ui.history_list.addItem(f"Medikament: {input} wurde zu Datenbank hinzugefügt")
+            ui.list_medics_new.clear()
+            ui.init_medics_to_medics_page()
+        return add_new_medic_in_medic_page_ui

@@ -115,3 +115,22 @@ class UpdateHedgehog:
 
         return query_selected_igel_to_list_ui
 
+    @staticmethod
+    def delete_disease_update(ui):
+        def delete_disease_update_ui():
+            name = ui.label_update_igel_name.text()
+            igel = session.query(Igel).filter_by(name=name).first()
+            print(igel.name)
+            disease_name = ui.list_update_diseases.currentItem().text()
+            disease = session.query(Disease).filter_by(name=disease_name).first()
+
+
+            igel.diseases.remove(disease)
+            session.commit()
+            listItems = ui.list_update_diseases.selectedItems()
+            if not listItems: return
+            for item in listItems:
+                ui.list_update_diseases.takeItem(ui.list_update_diseases.row(item))
+
+        return delete_disease_update_ui
+

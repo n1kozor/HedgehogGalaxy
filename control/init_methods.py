@@ -1,7 +1,9 @@
-from database.models import *
+
 from control.update_hedgehog import UpdateHedgehog
 from control.medics_hedgehog import *
 from PyQt5.QtWidgets import QMessageBox
+
+
 class InitMethods:
     @staticmethod
     def query_all_diseases(ui):
@@ -28,6 +30,20 @@ class InitMethods:
         return query_all_medics_ui
 
     @staticmethod
+    def query_all_medics_to_medics_page(ui):
+        def query_all_medics_to_medics_page_ui():
+            medics_list = []
+            m = session.query(Medics).all()
+            for i in m:
+                medics_list.append(i.name)
+                print(i)
+            for x in medics_list:
+                ui.list_medics_new.addItem(x)
+                print(x)
+
+        return query_all_medics_to_medics_page_ui
+
+    @staticmethod
     def query_all_hedgehog_to_list(ui):
         def query_all_hedgehog_to_list_ui():
             ui.list_query_igel.clear()
@@ -36,6 +52,8 @@ class InitMethods:
                 ui.list_query_igel.addItem(i.name)
 
         return query_all_hedgehog_to_list_ui
+
+
 
     @staticmethod
     def show_new_hedgehog_page(ui):
@@ -55,6 +73,8 @@ class InitMethods:
             ui.list_add_medic_to_igel.setDisabled(True)
             ui.table_medics_history.setDisabled(True)
             ui.btn_add_medic_to_selected_igel.setDisabled(True)
+            ui.list_add_medic_to_igel.clear()
+            ui.init_medics()
         return show_medics_hedgehog_page
 
     @staticmethod
@@ -100,6 +120,14 @@ class InitMethods:
             ui.manage_pages.setCurrentIndex(5)
             ui.init_diseases_to_list()
         return show_diseases_hedgehog_page_ui
+
+    @staticmethod
+    def show_medics_hedgehog_page_add_new(ui):
+        def show_medics_hedgehog_page_add_new_ui():
+            ui.list_medics_new.clear()
+            ui.manage_pages.setCurrentIndex(6)
+            ui.init_medics_to_medics_page()
+        return show_medics_hedgehog_page_add_new_ui
 
     @staticmethod
     def take_diseases_to_igel_diseases(ui):

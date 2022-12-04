@@ -41,8 +41,14 @@ class Ui(QtWidgets.QMainWindow):
         self.init_hedgehog_list_to_medic_list = MedicsHedgehog.query_all_hedgehog_to_list_medics(self)
         self.init_hedgehog_list_to_medic_list()  # Init all hedgehog to list in medics page
 
+
         self.init_diseases_to_list = Diseases.query_all_diseases(self)
         self.init_diseases_to_list()
+
+        self.init_medics_to_medics_page = InitMethods.query_all_medics_to_medics_page(self)
+        self.init_medics_to_medics_page()
+
+
         self.init_list = self.findChild(QtWidgets.QListWidget, "init_list")
         self.btn_new_igel = self.findChild(QtWidgets.QPushButton, 'btn_new_igel')
         self.btn_new_igel.clicked.connect(InitMethods.show_new_hedgehog_page(self))
@@ -53,6 +59,15 @@ class Ui(QtWidgets.QMainWindow):
         self.manage_pages = self.findChild(QtWidgets.QStackedWidget, "manage_pages")
         self.btn_new_save_igel = self.findChild(QtWidgets.QPushButton, 'btn_new_save_igel')
         self.btn_new_save_igel.clicked.connect(NewHedgehog.save_new_igel_ui(self))
+        self.btn_medics_page = self.findChild(QtWidgets.QPushButton, "btn_medics_page")
+        self.btn_medics_page.clicked.connect(InitMethods.show_medics_hedgehog_page_add_new(self))
+        self.list_medics_new = self.findChild(QtWidgets.QListWidget, "list_medics_new")
+        self.btn_delete_medic = self.findChild(QtWidgets.QPushButton, "btn_delete_medic")
+        self.btn_delete_medic.clicked.connect(MedicsHedgehog.delete_medics_in_medics_page(self))
+        self.btn_add_new_medics_in_medics_page = self.findChild(QtWidgets.QPushButton, "btn_add_new_medics_in_medics_page")
+        self.btn_add_new_medics_in_medics_page.clicked.connect(MedicsHedgehog.add_new_medic_in_medic_page(self))
+        self.in_new_medics_in_medics_page = self.findChild(QtWidgets.QLineEdit, "in_new_medics_in_medics_page")
+
         """
                             Add New Igel
         """
@@ -119,6 +134,8 @@ class Ui(QtWidgets.QMainWindow):
         self.btn_delete_igel.clicked.connect(DeleteHedgehog.delete_hedgehog(self))
         self.list_update_diseases = self.findChild(QtWidgets.QListWidget, "list_update_diseases")
         self.in_update_igel_status = self.findChild(QtWidgets.QComboBox, "in_update_igel_status")
+        self.btn_delete_disease_from_igel = self.findChild(QtWidgets.QPushButton, "btn_delete_disease_from_igel")
+        self.btn_delete_disease_from_igel.clicked.connect(UpdateHedgehog.delete_disease_update(self))
         """
                                     Igel Medics Page
         """

@@ -499,3 +499,69 @@
 2022-12-04 22:59:10.242 | DEBUG    | __main__:__init__:169 - Programm wurde erfolgreich initialisiert.
 2022-12-04 22:59:35.026 | DEBUG    | __main__:__init__:169 - Programm wurde erfolgreich initialisiert.
 2022-12-04 23:00:21.587 | DEBUG    | __main__:__init__:169 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:37:33.449 | DEBUG    | __main__:__init__:171 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:39:46.768 | DEBUG    | __main__:__init__:171 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:40:45.672 | DEBUG    | __main__:__init__:171 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:40:49.879 | DEBUG    | control.update_hedgehog:delete_disease_ui:128 - Krankheit mit Namen: Schnupfen wurde erfolgreich gelöscht
+2022-12-04 23:40:58.918 | DEBUG    | control.update_hedgehog:delete_disease_ui:128 - Krankheit mit Namen: Zahnstein wurde erfolgreich gelöscht
+2022-12-04 23:42:10.497 | DEBUG    | __main__:__init__:173 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:42:16.541 | DEBUG    | control.update_hedgehog:delete_disease_ui:128 - Krankheit mit Namen: Lungenhaarwürmer wurde erfolgreich gelöscht
+2022-12-04 23:44:06.465 | DEBUG    | __main__:__init__:173 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:44:11.960 | DEBUG    | control.update_hedgehog:delete_disease_ui:128 - Krankheit mit Namen: Eitrige Stacheln wurde erfolgreich gelöscht
+2022-12-04 23:46:37.711 | DEBUG    | __main__:__init__:173 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:46:44.881 | DEBUG    | control.update_hedgehog:delete_disease_ui:128 - Krankheit mit Namen: Lungenwürmer wurde erfolgreich gelöscht
+2022-12-04 23:47:38.553 | DEBUG    | __main__:__init__:173 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:47:49.010 | DEBUG    | control.update_hedgehog:delete_disease_ui:128 - Krankheit mit Namen: Milben wurde erfolgreich gelöscht
+2022-12-04 23:48:13.114 | DEBUG    | __main__:__init__:173 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:48:28.874 | DEBUG    | control.update_hedgehog:delete_disease_ui:128 - Krankheit mit Namen: Darmwürmer wurde erfolgreich gelöscht
+2022-12-04 23:48:43.827 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:48:49.160 | DEBUG    | control.update_hedgehog:delete_disease_ui:128 - Krankheit mit Namen: Bandwurm wurde erfolgreich gelöscht
+2022-12-04 23:49:08.066 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:49:13.707 | DEBUG    | control.update_hedgehog:delete_disease_ui:128 - Krankheit mit Namen: Befall von Fliegeneier wurde erfolgreich gelöscht
+2022-12-04 23:49:20.757 | DEBUG    | control.update_hedgehog:delete_disease_ui:128 - Krankheit mit Namen: Pilz wurde erfolgreich gelöscht
+2022-12-04 23:52:54.361 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:55:28.403 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:55:37.926 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:57:47.778 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:58:42.608 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:58:52.683 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-04 23:59:18.160 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:00:57.651 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:01:23.384 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:01:54.224 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:02:17.756 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:02:45.703 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:02:58.889 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:03:41.287 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:03:58.718 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:05:36.426 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:06:27.684 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:09:08.703 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:09:14.811 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:09:32.040 | DEBUG    | __main__:__init__:172 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:10:08.841 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:19 - Ige mit Namen: asd wurde erfolgreich gelöscht
+2022-12-05 00:13:33.098 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:48 - Igel: Miklos hat Antibiotika genommen!
+2022-12-05 00:13:36.222 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:48 - Igel: Markus hat Antibiotika genommen!
+2022-12-05 00:13:37.394 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:48 - Igel: Markus hat Aufbaumittel genommen!
+2022-12-05 00:13:39.502 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:48 - Igel: Markus hat Vitamine genommen!
+2022-12-05 00:13:45.603 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:48 - Igel: Markus hat Entwurmung genommen!
+2022-12-05 00:13:46.509 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:48 - Igel: Markus hat Antibiotika genommen!
+2022-12-05 00:22:56.885 | DEBUG    | __main__:__init__:175 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:23:03.676 | DEBUG    | __main__:__init__:175 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:25:13.032 | DEBUG    | __main__:__init__:180 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:25:40.002 | DEBUG    | __main__:__init__:180 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:26:08.390 | DEBUG    | __main__:__init__:180 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:26:46.311 | DEBUG    | __main__:__init__:180 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:28:15.620 | DEBUG    | __main__:__init__:180 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:30:05.137 | DEBUG    | __main__:__init__:180 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:33:56.319 | DEBUG    | __main__:__init__:182 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:34:12.617 | DEBUG    | __main__:__init__:182 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:35:05.512 | DEBUG    | __main__:__init__:182 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:39:22.260 | DEBUG    | __main__:__init__:186 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:40:19.078 | DEBUG    | __main__:__init__:186 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:41:22.784 | DEBUG    | __main__:__init__:186 - Programm wurde erfolgreich initialisiert.
+2022-12-05 00:41:48.435 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:48 - Igel: Markus hat Schmerzmittel genommen!
+2022-12-05 00:41:49.069 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:48 - Igel: Markus hat Schmerzmittel genommen!
+2022-12-05 00:41:49.818 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:48 - Igel: Markus hat Schmerzmittel genommen!
+2022-12-05 00:41:50.389 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:48 - Igel: Markus hat Entwurmung genommen!
+2022-12-05 00:41:51.251 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:48 - Igel: Markus hat Entwurmung genommen!
