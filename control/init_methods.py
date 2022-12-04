@@ -1,7 +1,7 @@
 from database.models import *
 from control.update_hedgehog import UpdateHedgehog
-
-
+from control.medics_hedgehog import *
+from PyQt5.QtWidgets import QMessageBox
 class InitMethods:
     @staticmethod
     def query_all_diseases(ui):
@@ -41,26 +41,35 @@ class InitMethods:
     def show_new_hedgehog_page(ui):
         def show_new_hedgehog_page_ui():
             ui.manage_pages.setCurrentIndex(0)
-            InitMethods.query_all_hedgehog_to_list(ui)
+            ui.init_hedgehog_list()
+            ui.list_new_disease.clear()
+            ui.init_disease()
 
         return show_new_hedgehog_page_ui
 
     @staticmethod
     def show_medics_hedgehog_page(ui):
         def show_medics_hedgehog_page():
-            ui.manage_pages.setCurrentIndex(3)
-            InitMethods.query_all_hedgehog_to_list(ui)
-
+            ui.manage_pages.setCurrentIndex(4)
+            ui.init_hedgehog_list_to_medic_list()
+            ui.list_add_medic_to_igel.setDisabled(True)
+            ui.table_medics_history.setDisabled(True)
+            ui.btn_add_medic_to_selected_igel.setDisabled(True)
         return show_medics_hedgehog_page
 
     @staticmethod
     def show_update_hedgehog_page(ui):
         def show_update_hedgehog_page_ui():
-            ui.manage_pages.setCurrentIndex(2)
-            take = UpdateHedgehog.take_hedgehog_profil_to_update_page(ui)
-            take()
-            query = InitMethods.query_all_hedgehog_to_list(ui)
-            query()
+            try:
+                ui.list_update_diseases.clear()
+                take = UpdateHedgehog.take_hedgehog_profil_to_update_page(ui)
+                take()
+                query = InitMethods.query_all_hedgehog_to_list(ui)
+                query()
+                ui.manage_pages.setCurrentIndex(3)
+
+            except:
+                QMessageBox.about(ui, "Warnung", "Kein Igel ausgewählt. Sie müssen ein Igel auswählen, um sein Profil anzuzeigen!")
 
         return show_update_hedgehog_page_ui
 
@@ -68,8 +77,26 @@ class InitMethods:
     def show_query_hedgehog_page(ui):
         def show_query_hedgehog_page_ui():
             ui.manage_pages.setCurrentIndex(1)
-
+            ui.label_query_profil_description.clear()
+            ui.label_query_profil_name.clear()
+            ui.label_query_profil_age.clear()
+            ui.label_query_profil_local.clear()
+            ui.label_query_profil_sex.clear()
+            ui.label_query_profil_weight.clear()
+            ui.list_query_profil_disease.clear()
+            ui.list_query_igel.clear()
+            m = session.query(Igel).all()
+            for i in m:
+                ui.list_query_igel.addItem(i.name)
         return show_query_hedgehog_page_ui
+
+    @staticmethod
+    def show_diseases_hedgehog_page(ui):
+        def show_diseases_hedgehog_page_ui():
+            ui.list_diseases.clear()
+            ui.manage_pages.setCurrentIndex(5)
+            ui.init_diseases_to_list()
+        return show_diseases_hedgehog_page_ui
 
     @staticmethod
     def take_diseases_to_igel_diseases(ui):

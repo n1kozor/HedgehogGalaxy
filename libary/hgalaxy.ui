@@ -6,193 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1395</width>
-    <height>892</height>
+    <width>1389</width>
+    <height>805</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">
-
-QLineEdit{ 
-background-color:white;
-border: 1px solid gray;
-border-radius: 10px;
-padding: 0 8px;
-selection-background-color: darkgray;
-font-size: 16px;}
-QLineEdit:focus 
-
-
-</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTabWidget" name="tabWidget_navigation">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>0</y>
-      <width>831</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="tab_1">
-     <attribute name="title">
-      <string>Verwaltung</string>
-     </attribute>
-     <widget class="QPushButton" name="btn_new_igel">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>10</y>
-        <width>41</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="acceptDrops">
-       <bool>true</bool>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: transparent</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>img/icons8-add-100.png</normaloff>img/icons8-add-100.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>45</width>
-        <height>45</height>
-       </size>
-      </property>
-      <property name="shortcut">
-       <string notr="true"/>
-      </property>
-      <property name="checkable">
-       <bool>false</bool>
-      </property>
-      <property name="autoRepeat">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btn_query_igel">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>0</y>
-        <width>51</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="mouseTracking">
-       <bool>true</bool>
-      </property>
-      <property name="acceptDrops">
-       <bool>true</bool>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: transparent</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>img/icons8-search-more-100.png</normaloff>img/icons8-search-more-100.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>45</width>
-        <height>45</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btn_medics_igel">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>10</y>
-        <width>121</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Igel Medikamenten</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_26">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>50</y>
-        <width>51</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Neue Igel</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_27">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>50</y>
-        <width>81</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Igel abfragen</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btn_diseases_igel">
-      <property name="geometry">
-       <rect>
-        <x>680</x>
-        <y>10</y>
-        <width>121</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Krankheiten</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>Administrator</string>
-     </attribute>
-    </widget>
-   </widget>
    <widget class="QStackedWidget" name="manage_pages">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>110</y>
-      <width>831</width>
-      <height>501</height>
+      <x>290</x>
+      <y>20</y>
+      <width>861</width>
+      <height>521</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -200,7 +31,7 @@ QLineEdit:focus
 
 border: 1px solid gray;
 padding: 0 8px;
-font-size: 16px;
+font-size: 12px;
 
 }
 QListWidget{ 
@@ -208,7 +39,7 @@ background-color:white;
 border: 1px solid gray;
 border-radius: 10px;
 padding: 0 8px;
-font-size: 16px;}
+font-size: 12px;}
 
 
 QPushButton{ 
@@ -216,25 +47,37 @@ background-color: rgb(222, 222, 222);
 border: 1px solid gray;
 border-radius: 10px;
 padding: 0 8px;
-font-size: 10px;}
+font-size: 12px;}
 
 QLabel{ 
 border-radius: 10px;
 padding: 0 8px;
-font-size: 10px;}
+font-size: 12px;}
 
 QComboBox{ 
 border: 1px solid gray;
 border-radius: 10px;
 padding: 0 8px;
-font-size: 10px;}
+font-size: 12px;}
 
 QTableWidget{ 
 background-color:white;
 border: 1px solid gray;
 border-radius: 10px;
 padding: 0 8px;
-font-size: 16px;}</string>
+font-size: 12px;}
+
+
+
+QLineEdit{ 
+background-color:white;
+border: 1px solid gray;
+border-radius: 10px;
+padding: 0 8px;
+selection-background-color: darkgray;
+font-size: 12px;}
+QLineEdit:focus 
+</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::NoFrame</enum>
@@ -243,7 +86,7 @@ font-size: 16px;}</string>
      <number>1</number>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page_new_igel">
      <widget class="QLabel" name="label">
@@ -269,14 +112,7 @@ font-size: 16px;}</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QLineEdit{ 
-background-color:white;
-border: 1px solid gray;
-border-radius: 10px;
-padding: 0 8px;
-selection-background-color: darkgray;
-font-size: 16px;}
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string/>
@@ -607,10 +443,13 @@ font-size: 16px;}
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>0</y>
+        <y>10</y>
         <width>231</width>
         <height>41</height>
        </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>Aktualisieren</string>
@@ -619,9 +458,9 @@ font-size: 16px;}
      <widget class="QLineEdit" name="in_igel_query_filter">
       <property name="geometry">
        <rect>
-        <x>92</x>
-        <y>80</y>
-        <width>161</width>
+        <x>100</x>
+        <y>120</y>
+        <width>151</width>
         <height>20</height>
        </rect>
       </property>
@@ -629,9 +468,9 @@ font-size: 16px;}
      <widget class="QLabel" name="label_9">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>80</y>
-        <width>61</width>
+        <x>10</x>
+        <y>120</y>
+        <width>91</width>
         <height>20</height>
        </rect>
       </property>
@@ -643,10 +482,13 @@ font-size: 16px;}
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>110</y>
+        <y>60</y>
         <width>231</width>
         <height>41</height>
        </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>Igel abfragen</string>
@@ -655,8 +497,8 @@ font-size: 16px;}
      <widget class="QLabel" name="profil_name">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>110</y>
+        <x>370</x>
+        <y>10</y>
         <width>231</width>
         <height>21</height>
        </rect>
@@ -674,24 +516,11 @@ font-size: 16px;}
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="btn_show_igel_profil">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>490</y>
-        <width>111</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Igel Profil anzeigen</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="profil_sex">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>140</y>
+        <x>370</x>
+        <y>40</y>
         <width>231</width>
         <height>21</height>
        </rect>
@@ -712,8 +541,8 @@ font-size: 16px;}
      <widget class="QLabel" name="profil_age">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>170</y>
+        <x>370</x>
+        <y>70</y>
         <width>231</width>
         <height>21</height>
        </rect>
@@ -734,8 +563,8 @@ font-size: 16px;}
      <widget class="QLabel" name="profil_weight">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>200</y>
+        <x>370</x>
+        <y>100</y>
         <width>231</width>
         <height>21</height>
        </rect>
@@ -756,18 +585,18 @@ font-size: 16px;}
      <widget class="QListWidget" name="profil_disease">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>230</y>
+        <x>370</x>
+        <y>130</y>
         <width>231</width>
-        <height>61</height>
+        <height>151</height>
        </rect>
       </property>
      </widget>
      <widget class="QLabel" name="profil_local">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>300</y>
+        <x>370</x>
+        <y>290</y>
         <width>231</width>
         <height>21</height>
        </rect>
@@ -788,10 +617,10 @@ font-size: 16px;}
      <widget class="QLabel" name="profil_description">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>330</y>
+        <x>370</x>
+        <y>350</y>
         <width>231</width>
-        <height>161</height>
+        <height>141</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -810,8 +639,8 @@ font-size: 16px;}
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>110</y>
+        <x>280</x>
+        <y>10</y>
         <width>81</width>
         <height>21</height>
        </rect>
@@ -823,8 +652,8 @@ font-size: 16px;}
      <widget class="QLabel" name="label_11">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>140</y>
+        <x>280</x>
+        <y>40</y>
         <width>81</width>
         <height>21</height>
        </rect>
@@ -836,8 +665,8 @@ font-size: 16px;}
      <widget class="QLabel" name="label_12">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>170</y>
+        <x>280</x>
+        <y>70</y>
         <width>81</width>
         <height>21</height>
        </rect>
@@ -849,8 +678,8 @@ font-size: 16px;}
      <widget class="QLabel" name="label_13">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>200</y>
+        <x>280</x>
+        <y>100</y>
         <width>81</width>
         <height>21</height>
        </rect>
@@ -862,9 +691,9 @@ font-size: 16px;}
      <widget class="QLabel" name="label_14">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>230</y>
-        <width>81</width>
+        <x>280</x>
+        <y>130</y>
+        <width>91</width>
         <height>21</height>
        </rect>
       </property>
@@ -875,8 +704,8 @@ font-size: 16px;}
      <widget class="QLabel" name="label_15">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>300</y>
+        <x>280</x>
+        <y>290</y>
         <width>81</width>
         <height>21</height>
        </rect>
@@ -888,9 +717,9 @@ font-size: 16px;}
      <widget class="QLabel" name="label_16">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>330</y>
-        <width>81</width>
+        <x>280</x>
+        <y>350</y>
+        <width>91</width>
         <height>21</height>
        </rect>
       </property>
@@ -901,14 +730,106 @@ font-size: 16px;}
      <widget class="QPushButton" name="btn_update_igel">
       <property name="geometry">
        <rect>
-        <x>620</x>
+        <x>670</x>
         <y>450</y>
         <width>111</width>
         <height>41</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="text">
        <string>Igel bearbeiten</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>320</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kontakt:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="profil_contact">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>320</y>
+        <width>231</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_index_init">
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>311</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="toolTipDuration">
+       <number>0</number>
+      </property>
+      <property name="text">
+       <string>Anwendung kann benutzt werden!</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 20px</string>
+      </property>
+      <property name="text">
+       <string>Hedgehog Galaxy BETA</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="init_list">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>791</width>
+        <height>311</height>
+       </rect>
       </property>
      </widget>
     </widget>
@@ -917,23 +838,37 @@ font-size: 16px;}
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>20</y>
-        <width>121</width>
+        <y>10</y>
+        <width>381</width>
         <height>41</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 20px</string>
+      </property>
       <property name="text">
-       <string>Igel Name</string>
+       <string/>
       </property>
      </widget>
      <widget class="QLineEdit" name="in_update_igel_weight">
       <property name="geometry">
        <rect>
         <x>100</x>
-        <y>160</y>
-        <width>113</width>
+        <y>90</y>
+        <width>191</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QPushButton" name="btn_save_update_igel">
@@ -945,6 +880,9 @@ font-size: 16px;}
         <height>31</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="text">
        <string>Aktualisieren</string>
       </property>
@@ -952,10 +890,10 @@ font-size: 16px;}
      <widget class="QLabel" name="label_17">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>130</y>
-        <width>81</width>
-        <height>21</height>
+        <width>51</width>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
@@ -965,9 +903,9 @@ font-size: 16px;}
      <widget class="QLabel" name="label_19">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>290</y>
-        <width>81</width>
+        <x>380</x>
+        <y>50</y>
+        <width>91</width>
         <height>21</height>
        </rect>
       </property>
@@ -978,9 +916,9 @@ font-size: 16px;}
      <widget class="QLabel" name="label_20">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>190</y>
-        <width>81</width>
+        <x>10</x>
+        <y>260</y>
+        <width>91</width>
         <height>21</height>
        </rect>
       </property>
@@ -991,8 +929,8 @@ font-size: 16px;}
      <widget class="QLabel" name="label_21">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>160</y>
+        <x>10</x>
+        <y>90</y>
         <width>81</width>
         <height>21</height>
        </rect>
@@ -1004,10 +942,10 @@ font-size: 16px;}
      <widget class="QLabel" name="label_22">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>100</y>
+        <x>10</x>
+        <y>50</y>
         <width>81</width>
-        <height>21</height>
+        <height>20</height>
        </rect>
       </property>
       <property name="text">
@@ -1017,8 +955,8 @@ font-size: 16px;}
      <widget class="QLabel" name="label_23">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>260</y>
+        <x>10</x>
+        <y>170</y>
         <width>81</width>
         <height>21</height>
        </rect>
@@ -1032,42 +970,54 @@ font-size: 16px;}
        <rect>
         <x>100</x>
         <y>130</y>
-        <width>113</width>
+        <width>191</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QLineEdit" name="in_update_igel_sex">
       <property name="geometry">
        <rect>
         <x>100</x>
-        <y>100</y>
-        <width>113</width>
+        <y>50</y>
+        <width>191</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QLineEdit" name="in_update_igel_local">
       <property name="geometry">
        <rect>
         <x>100</x>
-        <y>260</y>
-        <width>113</width>
+        <y>170</y>
+        <width>191</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QLineEdit" name="in_update_igel_description">
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>290</y>
-        <width>191</width>
-        <height>161</height>
+        <x>480</x>
+        <y>50</y>
+        <width>321</width>
+        <height>131</height>
        </rect>
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="btn_delete_igel">
@@ -1079,8 +1029,47 @@ font-size: 16px;}
         <height>31</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="text">
        <string>IGEL LÖSCHEN</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="list_update_diseases">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>290</y>
+        <width>271</width>
+        <height>151</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kontakt:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="in_update_igel_contact">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>210</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </widget>
@@ -1126,10 +1115,10 @@ font-size: 16px;}
       <property name="styleSheet">
        <string notr="true">QListWidget{ 
 background-color:white;
-border: 2px solid gray;
+border: 1px solid gray;
 border-radius: 10px;
 padding: 0 8px;
-font-size: 16px;}</string>
+font-size: 12px;}</string>
       </property>
      </widget>
      <widget class="QPushButton" name="btn_query_selected_igel_2">
@@ -1198,26 +1187,26 @@ font-size: 16px;}</string>
       <property name="styleSheet">
        <string notr="true">QListWidget{ 
 background-color:white;
-border: 2px solid gray;
+border: 1px solid gray;
 border-radius: 10px;
 padding: 0 8px;
-font-size: 16px;}</string>
+font-size: 12px;}</string>
       </property>
      </widget>
      <widget class="QPushButton" name="btn_add_medic_to_selected_igel">
       <property name="geometry">
        <rect>
-        <x>500</x>
-        <y>70</y>
-        <width>181</width>
-        <height>31</height>
+        <x>490</x>
+        <y>50</y>
+        <width>161</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="cursor">
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
-       <string>Medikamente Einnahme Bestätigen</string>
+       <string>Einnahme</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_24">
@@ -1233,14 +1222,100 @@ font-size: 16px;}</string>
        <string notr="true">font-size: 20px;</string>
       </property>
       <property name="text">
-       <string>Igel Name</string>
+       <string/>
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="page"/>
+    <widget class="QWidget" name="page_diseases_igel">
+     <widget class="QListWidget" name="list_dieseases">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>251</width>
+        <height>321</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>350</y>
+        <width>171</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_delete_disease">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>380</y>
+        <width>131</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kranklheit löschen</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>70</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Krankheiten im Datenbank</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Krankheit hinzufügen:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="in_new_disease_in_disease_page">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>20</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_add_new_disease_in_disease_page">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>20</y>
+        <width>91</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Hinzuifügen</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
    <widget class="QScrollArea" name="scrollArea">
     <property name="geometry">
@@ -1269,59 +1344,191 @@ font-size: 16px;}</string>
        <height>651</height>
       </rect>
      </property>
-     <widget class="QLabel" name="label_status">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>121</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-      </property>
-      <property name="wordWrap">
+     <widget class="QTabWidget" name="tabWidget_navigation">
+      <property name="enabled">
        <bool>true</bool>
       </property>
-     </widget>
-    </widget>
-   </widget>
-   <widget class="QTabWidget" name="tabWidget">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>640</y>
-      <width>831</width>
-      <height>201</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="tab">
-     <attribute name="title">
-      <string>Historie</string>
-     </attribute>
-     <widget class="QListWidget" name="history_list">
       <property name="geometry">
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>831</width>
-        <height>181</height>
+        <width>251</width>
+        <height>831</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{ 
+background-color: rgb(222, 222, 222);
+border: 1px solid gray;
+border-radius: 10px;
+padding: 0 8px;
+font-size: 12px;}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_1">
+       <attribute name="title">
+        <string>Verwaltung</string>
+       </attribute>
+       <widget class="QPushButton" name="btn_new_igel">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Neue Igel</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>45</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="autoRepeat">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_query_igel">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>60</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="mouseTracking">
+         <bool>true</bool>
+        </property>
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Igel Suchen</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>45</width>
+          <height>45</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_diseases_igel">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>260</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="text">
+         <string>Krankheiten</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_medics_igel">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>110</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="text">
+         <string>Medikamenten Behandlung</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Administrator</string>
+       </attribute>
+       <widget class="QPushButton" name="btn_admin_create_db">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>221</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Datenbank mit Stammdaten erstellen</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_3">
-     <attribute name="title">
-      <string>Tab 2</string>
-     </attribute>
-    </widget>
+   </widget>
+   <widget class="QLabel" name="label_status">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>20</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="history_list">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>550</y>
+      <width>861</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget{ 
+background-color:white;
+border: 1px solid gray;
+border-radius: 10px;
+padding: 0 8px;
+font-size: 12px;}</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -1329,7 +1536,7 @@ font-size: 16px;}</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1395</width>
+     <width>1389</width>
      <height>21</height>
     </rect>
    </property>

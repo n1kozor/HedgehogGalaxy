@@ -28,10 +28,11 @@ def init_db_medics():
         session.commit()
 
 # Create all tables by issuing CREATE TABLE commands to the DB.
-Base.metadata.create_all(engine)
+
 
 
 # Fill Tables with Medics and Diseases
-
-#init_db_medics()
-#init_db_diseases()
+def admin_db_init():
+    init_db_medics()
+    init_db_diseases()
+Base.metadata.create_all(engine)

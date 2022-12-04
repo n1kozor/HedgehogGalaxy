@@ -1,5 +1,5 @@
 from database.models import *
-
+from PyQt5.QtWidgets import QMessageBox
 class NewHedgehog:
     @staticmethod
     def save_new_igel_ui(ui):
@@ -14,7 +14,7 @@ class NewHedgehog:
             contacts = ui.in_new_igel_contact.text()
             s = bool(session.query(Igel).filter_by(name=name).first())
             if s is True:
-                ui.label_status.setText(f"Igel mit Namen {name} ist bereits in Datenbank")
+                QMessageBox.about(ui, "Information", f"Igel mit Namen: {name} ist bereits im Datenbank!")
 
             else:
                 new_igel = Igel(name=name, sex=sex, age=age, weight=weight, description=description, local=local, contacts=contacts)
@@ -25,7 +25,22 @@ class NewHedgehog:
 
                 session.add(new_igel)
                 session.commit()
-                ui.label_status.setText(f"Igel mit Namen {name} wurde in Datenbank aufgenommen")
+
+                QMessageBox.about(ui, "Information", f"Igel mit Namen {name} wurde in Datenbank aufgenommen")
+
+                # CLEAR ALL
+
+                ui.in_new_igel_name.clear()
+                ui.in_new_igel_sex.currentText()
+                ui.in_new_igel_age.clear()
+                ui.in_new_igel_weight.clear()
+                ui.in_new_igel_description.clear()
+                ui.list_new_disease_to_igel.clear()
+                ui.in_new_igel_local.clear()
+                ui.in_new_igel_contact.clear()
+                ui.list_new_disease.clear()
+                ui.init_disease()
+
         return save_new_igel
     @staticmethod
     def add_new_igel_disease(ui, list=list, input=str):

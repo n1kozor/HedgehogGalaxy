@@ -9,6 +9,185 @@
 2022-12-01 21:03:11.290 | DEBUG    | __main__:__init__:111 - Programm wurde erfolgreich initialisiert.
 2022-12-01 21:03:15.005 | DEBUG    | __main__:delete_igel:254 - Ige mit Namen: Sonic wurde erfolgreich gelöscht
 2022-12-01 21:03:20.248 | DEBUG    | __main__:delete_igel:254 - Ige mit Namen: Kukika wurde erfolgreich gelöscht
+2022-12-01 21:25:49.798 | DEBUG    | __main__:__init__:111 - Programm wurde erfolgreich initialisiert.
+2022-12-01 22:45:41.615 | DEBUG    | __main__:__init__:115 - Programm wurde erfolgreich initialisiert.
+2022-12-01 22:45:56.983 | DEBUG    | __main__:delete_igel:255 - Ige mit Namen: dasdasd wurde erfolgreich gelöscht
+2022-12-01 22:46:23.741 | DEBUG    | __main__:__init__:114 - Programm wurde erfolgreich initialisiert.
+2022-12-01 22:46:44.887 | DEBUG    | __main__:delete_igel:254 - Ige mit Namen: 567z5 wurde erfolgreich gelöscht
+2022-12-01 22:46:52.401 | DEBUG    | __main__:delete_igel:254 - Ige mit Namen: asdassadasdasdasdasdasd wurde erfolgreich gelöscht
+2022-12-01 22:50:09.834 | DEBUG    | __main__:__init__:114 - Programm wurde erfolgreich initialisiert.
+2022-12-01 22:50:14.674 | DEBUG    | __main__:delete_igel:254 - Ige mit Namen: fsdagtredasd wurde erfolgreich gelöscht
+2022-12-01 22:50:19.165 | DEBUG    | __main__:delete_igel:254 - Ige mit Namen: asdas wurde erfolgreich gelöscht
+2022-12-01 22:52:41.169 | DEBUG    | __main__:__init__:121 - Programm wurde erfolgreich initialisiert.
+2022-12-01 22:52:49.359 | DEBUG    | __main__:delete_igel:261 - Ige mit Namen: hjdtrzh wurde erfolgreich gelöscht
+2022-12-01 22:52:53.572 | DEBUG    | __main__:delete_igel:261 - Ige mit Namen: Sün1 wurde erfolgreich gelöscht
+2022-12-01 22:56:46.152 | DEBUG    | __main__:__init__:121 - Programm wurde erfolgreich initialisiert.
+2022-12-01 22:56:56.623 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: asdassadasdasdasd hat Antibiotika genommen!
+2022-12-01 22:57:00.539 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: asdassadasdasdasd hat Aufbaumittel genommen!
+2022-12-01 22:57:10.076 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: asdassadasdasdasd hat Aufbaumittel genommen!
+2022-12-01 22:57:15.073 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: asdassadasdasdasd hat Entwurmung genommen!
+2022-12-01 22:57:18.750 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: rtshsrfth hat Entwurmung genommen!
+2022-12-01 22:58:00.859 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: asdassadasdasdasd hat Entwurmung genommen!
+2022-12-01 22:58:01.251 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: asdassadasdasdasd hat Entwurmung genommen!
+2022-12-01 22:58:01.411 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: asdassadasdasdasd hat Entwurmung genommen!
+2022-12-01 22:58:01.587 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: asdassadasdasdasd hat Entwurmung genommen!
+2022-12-01 22:58:01.748 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: asdassadasdasdasd hat Entwurmung genommen!
+2022-12-01 22:58:01.896 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: asdassadasdasdasd hat Entwurmung genommen!
+2022-12-01 22:58:02.064 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: asdassadasdasdasd hat Entwurmung genommen!
+2022-12-01 22:58:02.231 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: asdassadasdasdasd hat Entwurmung genommen!
+2022-12-01 22:58:02.384 | DEBUG    | __main__:add_medic_to_igel:362 - Igel: asdassadasdasdasd hat Entwurmung genommen!
+2022-12-01 22:59:47.330 | DEBUG    | __main__:__init__:121 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:00:47.844 | DEBUG    | __main__:__init__:121 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:02:02.343 | DEBUG    | __main__:__init__:121 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:02:15.280 | DEBUG    | __main__:__init__:121 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:02:48.627 | DEBUG    | __main__:__init__:121 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:03:17.556 | DEBUG    | __main__:__init__:121 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:03:39.733 | DEBUG    | __main__:__init__:121 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:04:57.071 | DEBUG    | __main__:__init__:121 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:07:45.685 | DEBUG    | __main__:__init__:121 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:08:04.728 | DEBUG    | __main__:delete_igel:265 - Ige mit Namen: asdassadasdasdasd wurde erfolgreich gelöscht
+2022-12-01 23:16:26.781 | DEBUG    | __main__:__init__:121 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:26:25.308 | DEBUG    | __main__:__init__:123 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:26:59.791 | DEBUG    | __main__:delete_igel:256 - Ige mit Namen: 3245345 wurde erfolgreich gelöscht
+2022-12-01 23:31:06.071 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:31:37.281 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:31:47.530 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:31:59.359 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:32:17.615 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:32:26.012 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:32:31.725 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:32:38.022 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:32:44.249 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:34:23.307 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:34:37.319 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:34:43.792 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:35:11.966 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:35:58.551 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:36:42.427 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:36:55.527 | DEBUG    | __main__:delete_igel:257 - Ige mit Namen: 3254324545 wurde erfolgreich gelöscht
+2022-12-01 23:37:02.541 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:37:46.134 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:38:00.947 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:39:17.308 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:40:02.831 | DEBUG    | __main__:__init__:123 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:41:48.381 | DEBUG    | __main__:__init__:123 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:42:55.222 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:43:07.925 | DEBUG    | __main__:__init__:124 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:46:42.485 | DEBUG    | __main__:__init__:126 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:49:22.657 | DEBUG    | __main__:__init__:126 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:49:44.986 | DEBUG    | __main__:delete_igel:255 - Ige mit Namen: 4we3rf3w4er wurde erfolgreich gelöscht
+2022-12-01 23:53:34.629 | DEBUG    | __main__:__init__:126 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:59:21.607 | DEBUG    | __main__:__init__:129 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:59:25.586 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:13 - Ige mit Namen: dsa wurde erfolgreich gelöscht
+2022-12-01 23:59:40.765 | DEBUG    | __main__:__init__:129 - Programm wurde erfolgreich initialisiert.
+2022-12-01 23:59:51.729 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:13 - Ige mit Namen: 324 wurde erfolgreich gelöscht
+2022-12-02 00:02:49.873 | DEBUG    | __main__:__init__:129 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:02:59.348 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:43 - Igel: sdfsdf hat Antibiotika genommen!
+2022-12-02 00:03:00.949 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:43 - Igel: sdfsdf hat Aufbaumittel genommen!
+2022-12-02 00:03:02.069 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:43 - Igel: sdfsdf hat Entwurmung genommen!
+2022-12-02 00:06:00.642 | DEBUG    | __main__:__init__:129 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:09:35.790 | DEBUG    | __main__:__init__:129 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:10:20.611 | DEBUG    | __main__:__init__:129 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:17:47.267 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:19:43.268 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:19:48.236 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:13 - Ige mit Namen: sdfsdf wurde erfolgreich gelöscht
+2022-12-02 00:20:11.669 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel:  hat Antibiotika genommen!
+2022-12-02 00:20:12.012 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel:  hat Antibiotika genommen!
+2022-12-02 00:20:16.554 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel:  hat Entwurmung genommen!
+2022-12-02 00:21:48.857 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:22:18.344 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: das hat Entwurmung genommen!
+2022-12-02 00:22:19.880 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: das hat Vitamine genommen!
+2022-12-02 00:22:21.228 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: das hat Schmerzmittel genommen!
+2022-12-02 00:22:23.655 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: das hat Entwurmung genommen!
+2022-12-02 00:22:24.085 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: das hat Entwurmung genommen!
+2022-12-02 00:22:25.105 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: das hat Antibiotika genommen!
+2022-12-02 00:22:28.919 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: wsfe hat Entwurmung genommen!
+2022-12-02 00:22:31.474 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: wsfe hat Vitamine genommen!
+2022-12-02 00:22:32.966 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: das hat Schmerzmittel genommen!
+2022-12-02 00:22:34.630 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: das hat Entwurmung genommen!
+2022-12-02 00:22:35.673 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: wsfe hat Aufbaumittel genommen!
+2022-12-02 00:22:36.760 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: wsfe hat Schmerzmittel genommen!
+2022-12-02 00:22:38.043 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: wsfe hat Vitamine genommen!
+2022-12-02 00:23:13.288 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:23:18.439 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel:  hat Entwurmung genommen!
+2022-12-02 00:23:21.773 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: das hat Antibiotika genommen!
+2022-12-02 00:23:23.681 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: das hat Schmerzmittel genommen!
+2022-12-02 00:23:40.373 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: das hat Vitamine genommen!
+2022-12-02 00:23:44.339 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: 5674234234 hat Antibiotika genommen!
+2022-12-02 00:23:46.555 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: 5674234234 hat Vitamine genommen!
+2022-12-02 00:28:06.104 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:28:16.185 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: 5674234234 hat Aufbaumittel genommen!
+2022-12-02 00:30:35.677 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:32:41.194 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:33:48.313 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:34:57.604 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:36:38.846 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-02 00:38:40.447 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-02 23:19:03.999 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-02 23:19:31.498 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: aaaaaaa hat Entwurmung genommen!
+2022-12-02 23:19:33.351 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: aaaaaaa hat Aufbaumittel genommen!
+2022-12-02 23:19:35.103 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: aaaaaaa hat Schmerzmittel genommen!
+2022-12-02 23:25:45.385 | DEBUG    | __main__:__init__:131 - Programm wurde erfolgreich initialisiert.
+2022-12-02 23:29:35.494 | DEBUG    | __main__:__init__:131 - Programm wurde erfolgreich initialisiert.
+2022-12-02 23:30:16.968 | DEBUG    | __main__:__init__:131 - Programm wurde erfolgreich initialisiert.
+2022-12-02 23:33:31.898 | DEBUG    | __main__:__init__:131 - Programm wurde erfolgreich initialisiert.
+2022-12-02 23:41:03.968 | DEBUG    | __main__:__init__:131 - Programm wurde erfolgreich initialisiert.
+2022-12-02 23:43:12.068 | DEBUG    | __main__:__init__:131 - Programm wurde erfolgreich initialisiert.
+2022-12-02 23:44:20.282 | DEBUG    | __main__:__init__:131 - Programm wurde erfolgreich initialisiert.
+2022-12-02 23:44:25.498 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel:  hat Vitamine genommen!
+2022-12-02 23:44:28.451 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel:  hat Entwurmung genommen!
+2022-12-02 23:45:06.836 | DEBUG    | __main__:__init__:131 - Programm wurde erfolgreich initialisiert.
+2022-12-02 23:45:13.610 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: sdfsdf hat Entwurmung genommen!
+2022-12-02 23:45:15.107 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: sdfsdf hat Antibiotika genommen!
+2022-12-02 23:45:16.695 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: sdfsdf hat Schmerzmittel genommen!
+2022-12-02 23:45:17.797 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: sdfsdf hat Aufbaumittel genommen!
+2022-12-02 23:45:20.047 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: sdfsdf hat Antibiotika genommen!
+2022-12-03 00:43:37.070 | DEBUG    | __main__:__init__:131 - Programm wurde erfolgreich initialisiert.
+2022-12-03 00:44:10.815 | DEBUG    | __main__:__init__:131 - Programm wurde erfolgreich initialisiert.
+2022-12-03 00:48:41.098 | DEBUG    | __main__:__init__:131 - Programm wurde erfolgreich initialisiert.
+2022-12-03 00:48:55.931 | DEBUG    | __main__:__init__:131 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:13:27.956 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:16:08.326 | DEBUG    | __main__:__init__:133 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:16:35.070 | DEBUG    | __main__:__init__:133 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:17:39.414 | DEBUG    | __main__:__init__:133 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:17:47.868 | DEBUG    | __main__:__init__:133 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:18:23.741 | DEBUG    | __main__:__init__:133 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:18:50.213 | DEBUG    | __main__:__init__:133 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:19:24.020 | DEBUG    | __main__:__init__:133 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:20:40.423 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:21:32.816 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:13 - Ige mit Namen: adsasd wurde erfolgreich gelöscht
+2022-12-03 01:22:09.250 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:22:46.419 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:22:55.337 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:23:07.616 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:24:26.515 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:25:37.282 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:35:56.846 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:36:05.400 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:19 - Ige mit Namen: Jani12 wurde erfolgreich gelöscht
+2022-12-03 01:36:44.721 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:36:50.842 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:19 - Ige mit Namen: Jani123 wurde erfolgreich gelöscht
+2022-12-03 01:38:55.620 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 01:39:45.247 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 13:29:02.001 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 13:30:21.297 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: Fikusz hat Antibiotika genommen!
+2022-12-03 13:30:25.331 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: Fikusz hat Vitamine genommen!
+2022-12-03 13:30:27.515 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: Fikusz hat Aufbaumittel genommen!
+2022-12-03 13:30:30.453 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: Fikusz hat Schmerzmittel genommen!
+2022-12-03 13:30:55.132 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:17 - Ige mit Namen: Fikusz wurde erfolgreich gelöscht
+2022-12-03 14:02:43.265 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 14:06:35.900 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 14:06:43.684 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: Jani hat Entwurmung genommen!
+2022-12-03 14:06:46.362 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: Jani hat Vitamine genommen!
+2022-12-03 14:07:10.893 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 18:42:30.584 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 18:42:42.284 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:17 - Ige mit Namen: Jani wurde erfolgreich gelöscht
+2022-12-03 18:42:50.215 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:17 - Ige mit Namen: asdasd wurde erfolgreich gelöscht
+2022-12-03 18:43:42.763 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 18:44:14.756 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 18:48:23.047 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 18:48:43.207 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:13:59.228 | DEBUG    | __main__:__init__:133 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:15:36.690 | DEBUG    | __main__:__init__:133 - Programm wurde erfolgreich initialisiert.
 2022-12-01 22:18:32.065 | DEBUG    | __main__:__init__:111 - Programm wurde erfolgreich initialisiert.
 2022-12-01 22:19:22.843 | DEBUG    | __main__:__init__:111 - Programm wurde erfolgreich initialisiert.
 2022-12-03 18:55:31.262 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
@@ -17,3 +196,230 @@
 2022-12-03 19:10:25.313 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
 2022-12-03 19:14:36.609 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
 2022-12-03 19:16:27.515 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:18:34.217 | DEBUG    | __main__:__init__:132 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:45:11.199 | DEBUG    | __main__:__init__:130 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:45:39.408 | DEBUG    | __main__:__init__:128 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:48:50.773 | DEBUG    | __main__:__init__:128 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:49:32.728 | DEBUG    | __main__:__init__:128 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:50:46.757 | DEBUG    | __main__:__init__:128 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:51:39.924 | DEBUG    | __main__:__init__:128 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:52:10.628 | DEBUG    | __main__:__init__:128 - Programm wurde erfolgreich initialisiert.
+2022-12-03 19:53:01.972 | DEBUG    | __main__:__init__:128 - Programm wurde erfolgreich initialisiert.
+2022-12-03 20:01:22.641 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 20:02:17.372 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 20:04:05.793 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 20:04:27.504 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 20:04:39.341 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 20:41:38.646 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 21:03:55.056 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 21:05:55.415 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 21:07:22.009 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 21:08:15.677 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 21:10:33.163 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 21:11:12.565 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 21:11:48.781 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 21:12:15.473 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 21:12:35.559 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 21:12:58.702 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 21:14:45.736 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 21:15:04.838 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-03 21:15:15.733 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 12:57:42.613 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 12:58:50.914 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 12:59:53.091 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:01:12.435 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:03:09.891 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:05:50.740 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:06:34.341 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:07:16.491 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:17 - Ige mit Namen: rereredffd wurde erfolgreich gelöscht
+2022-12-04 13:11:31.512 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:12:07.932 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:13:15.058 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:14:17.452 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:17:23.040 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:22:00.818 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:22:15.852 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:22:36.240 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:23:50.093 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:24:03.467 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:24:20.406 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:25:02.709 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:25:22.529 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:25:53.762 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:26:20.167 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:26:54.158 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:27:25.857 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:29:03.867 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:31:26.894 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:31:55.855 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:33:04.339 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:33:39.708 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:34:07.229 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:34:23.036 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:35:35.190 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:35:48.015 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:36:27.553 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:42:04.123 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:42:26.567 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:43:16.127 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:44:15.938 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:49:37.978 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:49:56.158 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:50:46.577 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:51:10.024 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:51:17.330 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:51:58.246 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:52:09.030 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:52:34.025 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:54:10.306 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 13:54:29.707 | DEBUG    | __main__:__init__:136 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:09:11.700 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:10:57.666 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:12:42.205 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:13:36.632 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:13:57.590 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:14:15.390 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:14:21.752 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:18:11.154 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:18:35.279 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:18:59.934 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:20:05.810 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:21:14.856 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:21:51.530 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:22:35.603 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:23:03.469 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: asdasd hat Aufbaumittel genommen!
+2022-12-04 14:23:04.823 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: asdasd hat Entwurmung genommen!
+2022-12-04 14:23:05.933 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: asdasd hat Schmerzmittel genommen!
+2022-12-04 14:24:09.581 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:24:53.806 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:17 - Ige mit Namen: 423423432234234234 wurde erfolgreich gelöscht
+2022-12-04 14:25:01.899 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:25:06.327 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:17 - Ige mit Namen:  wurde erfolgreich gelöscht
+2022-12-04 14:25:16.537 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:17 - Ige mit Namen: 4444444 wurde erfolgreich gelöscht
+2022-12-04 14:26:44.490 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:26:49.801 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:19 - Ige mit Namen: 444444444 wurde erfolgreich gelöscht
+2022-12-04 14:27:14.905 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:27:19.594 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:17 - Ige mit Namen: asdasd wurde erfolgreich gelöscht
+2022-12-04 14:27:33.897 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:17 - Ige mit Namen: dsadsa wurde erfolgreich gelöscht
+2022-12-04 14:28:29.579 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:28:33.520 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:19 - Ige mit Namen: sonic wurde erfolgreich gelöscht
+2022-12-04 14:29:13.175 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: Igel Name hat Aufbaumittel genommen!
+2022-12-04 14:31:25.945 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:34:09.524 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:36:12.313 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:37:44.233 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:38:02.954 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:38:41.668 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 14:39:04.532 | DEBUG    | __main__:__init__:135 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:28:24.436 | DEBUG    | __main__:__init__:143 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:29:48.549 | DEBUG    | __main__:__init__:143 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:32:19.842 | DEBUG    | __main__:__init__:145 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:35:32.517 | DEBUG    | __main__:__init__:146 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:36:57.068 | DEBUG    | __main__:__init__:147 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:41:09.142 | DEBUG    | __main__:__init__:149 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:41:12.068 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Eitrige Stacheln wurde erfolgreich gelöscht
+2022-12-04 15:41:17.038 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Pilz wurde erfolgreich gelöscht
+2022-12-04 15:42:13.215 | DEBUG    | __main__:__init__:149 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:42:15.171 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Kokzidien wurde erfolgreich gelöscht
+2022-12-04 15:42:17.092 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Lungenhaarwürmer wurde erfolgreich gelöscht
+2022-12-04 15:42:18.439 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Abzesse wurde erfolgreich gelöscht
+2022-12-04 15:42:19.428 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Bandwurm wurde erfolgreich gelöscht
+2022-12-04 15:42:21.168 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: asdsadasd wurde erfolgreich gelöscht
+2022-12-04 15:42:22.674 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Befall von Fliegeneier wurde erfolgreich gelöscht
+2022-12-04 15:42:24.609 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Lungenwürmer wurde erfolgreich gelöscht
+2022-12-04 15:43:49.438 | DEBUG    | __main__:__init__:149 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:43:58.824 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Darmsaugwurm wurde erfolgreich gelöscht
+2022-12-04 15:44:03.215 | DEBUG    | __main__:__init__:149 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:44:37.933 | DEBUG    | __main__:__init__:149 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:45:03.827 | DEBUG    | __main__:__init__:149 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:45:06.260 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Schnupfen wurde erfolgreich gelöscht
+2022-12-04 15:45:09.161 | DEBUG    | __main__:__init__:149 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:45:11.027 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Bisse von Hunden wurde erfolgreich gelöscht
+2022-12-04 15:45:12.127 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Bisse von Mader wurde erfolgreich gelöscht
+2022-12-04 15:45:46.318 | DEBUG    | __main__:__init__:149 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:45:48.230 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Zahnstein wurde erfolgreich gelöscht
+2022-12-04 15:45:49.518 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Befall von Maden wurde erfolgreich gelöscht
+2022-12-04 15:48:11.464 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Milben wurde erfolgreich gelöscht
+2022-12-04 15:48:33.522 | DEBUG    | __main__:__init__:149 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:48:36.584 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Darmwürmer wurde erfolgreich gelöscht
+2022-12-04 15:48:53.093 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Schnupfen wurde erfolgreich gelöscht
+2022-12-04 15:48:54.348 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Darmwürmer wurde erfolgreich gelöscht
+2022-12-04 15:48:55.463 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Abzesse wurde erfolgreich gelöscht
+2022-12-04 15:48:56.485 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Lungenhaarwürmer wurde erfolgreich gelöscht
+2022-12-04 15:48:57.557 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Befall von Maden wurde erfolgreich gelöscht
+2022-12-04 15:48:58.481 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Lungenwürmer wurde erfolgreich gelöscht
+2022-12-04 15:49:03.316 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Milben wurde erfolgreich gelöscht
+2022-12-04 15:49:04.360 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Darmsaugwurm wurde erfolgreich gelöscht
+2022-12-04 15:49:05.422 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Zahnstein wurde erfolgreich gelöscht
+2022-12-04 15:49:06.588 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Bisse von Hunden wurde erfolgreich gelöscht
+2022-12-04 15:49:07.853 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Bandwurm wurde erfolgreich gelöscht
+2022-12-04 15:49:34.872 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: dsadsa hat Vitamine genommen!
+2022-12-04 15:49:35.812 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: dsadsa hat Antibiotika genommen!
+2022-12-04 15:49:37.015 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:45 - Igel: dsadsa hat Schmerzmittel genommen!
+2022-12-04 15:50:02.769 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Jani wurde erfolgreich gelöscht
+2022-12-04 15:52:15.625 | DEBUG    | __main__:__init__:149 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:52:33.843 | DEBUG    | __main__:__init__:149 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:57:22.728 | DEBUG    | __main__:__init__:149 - Programm wurde erfolgreich initialisiert.
+2022-12-04 15:57:53.880 | DEBUG    | __main__:__init__:149 - Programm wurde erfolgreich initialisiert.
+2022-12-04 16:03:16.515 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:46 - Igel: Sonic hat Antibiotika genommen!
+2022-12-04 16:04:31.648 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Zahnstein wurde erfolgreich gelöscht
+2022-12-04 16:04:32.628 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Bisse von Hunden wurde erfolgreich gelöscht
+2022-12-04 16:04:33.666 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Bandwurm wurde erfolgreich gelöscht
+2022-12-04 16:11:53.848 | DEBUG    | __main__:__init__:152 - Programm wurde erfolgreich initialisiert.
+2022-12-04 16:11:59.783 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: asd wurde erfolgreich gelöscht
+2022-12-04 16:12:08.519 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: asdDASdASdasdsads wurde erfolgreich gelöscht
+2022-12-04 16:12:44.080 | DEBUG    | __main__:__init__:152 - Programm wurde erfolgreich initialisiert.
+2022-12-04 16:13:02.972 | DEBUG    | __main__:__init__:152 - Programm wurde erfolgreich initialisiert.
+2022-12-04 16:13:09.644 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: dgfgdf wurde erfolgreich gelöscht
+2022-12-04 16:15:06.410 | DEBUG    | __main__:__init__:152 - Programm wurde erfolgreich initialisiert.
+2022-12-04 16:19:24.785 | DEBUG    | __main__:__init__:154 - Programm wurde erfolgreich initialisiert.
+2022-12-04 16:19:32.879 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: sdadsa wurde erfolgreich gelöscht
+2022-12-04 16:19:39.609 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: asdDASdASdasdsads wurde erfolgreich gelöscht
+2022-12-04 16:20:12.441 | DEBUG    | __main__:__init__:154 - Programm wurde erfolgreich initialisiert.
+2022-12-04 16:20:14.154 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Befall von Maden wurde erfolgreich gelöscht
+2022-12-04 16:20:25.475 | DEBUG    | __main__:__init__:154 - Programm wurde erfolgreich initialisiert.
+2022-12-04 16:20:30.885 | DEBUG    | __main__:__init__:154 - Programm wurde erfolgreich initialisiert.
+2022-12-04 16:25:59.664 | DEBUG    | __main__:__init__:154 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:18:00.062 | DEBUG    | __main__:__init__:154 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:26:27.530 | DEBUG    | __main__:__init__:154 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:28:59.120 | DEBUG    | __main__:__init__:154 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:32:31.230 | DEBUG    | __main__:__init__:154 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:39:56.463 | DEBUG    | __main__:__init__:155 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:40:11.756 | DEBUG    | __main__:__init__:155 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:40:19.880 | DEBUG    | __main__:__init__:155 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:40:30.068 | DEBUG    | __main__:__init__:155 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:41:07.195 | DEBUG    | __main__:__init__:155 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:41:18.296 | DEBUG    | __main__:__init__:155 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:42:03.753 | DEBUG    | __main__:__init__:155 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:42:37.829 | DEBUG    | __main__:__init__:155 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:44:18.638 | DEBUG    | __main__:__init__:156 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:46:44.860 | DEBUG    | __main__:__init__:157 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:48:40.035 | DEBUG    | __main__:__init__:157 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:49:03.191 | DEBUG    | __main__:__init__:157 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:50:35.975 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Pilz wurde erfolgreich gelöscht
+2022-12-04 18:51:25.213 | DEBUG    | control.diseases:delete_disease_ui:27 - Krankheit mit Namen: Abzesse wurde erfolgreich gelöscht
+2022-12-04 18:51:54.943 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:19 - Ige mit Namen: Noémi wurde erfolgreich gelöscht
+2022-12-04 18:52:59.938 | DEBUG    | __main__:__init__:157 - Programm wurde erfolgreich initialisiert.
+2022-12-04 18:53:25.924 | DEBUG    | __main__:__init__:157 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:02:44.030 | DEBUG    | __main__:__init__:158 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:03:27.603 | DEBUG    | __main__:__init__:162 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:03:40.659 | DEBUG    | __main__:__init__:161 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:04:06.422 | DEBUG    | __main__:__init__:161 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:05:08.337 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:05:21.403 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:05:30.485 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:06:28.980 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:06:40.474 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:08:28.565 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:08:46.540 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:09:15.187 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:09:37.392 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:09:49.387 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:10:45.634 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:12:29.706 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:14:07.139 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:14:43.699 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:16:41.971 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:20:02.801 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:21:06.019 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:22:19.144 | DEBUG    | __main__:__init__:159 - Programm wurde erfolgreich initialisiert.
+2022-12-04 19:22:30.704 | DEBUG    | control.delete_hedgehog:delete_hedgehog_ui:19 - Ige mit Namen:  wurde erfolgreich gelöscht
