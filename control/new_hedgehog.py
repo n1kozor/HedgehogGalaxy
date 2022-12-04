@@ -14,7 +14,9 @@ class NewHedgehog:
             contacts = ui.in_new_igel_contact.text()
             status = ui.in_new_igel_status.currentText()
             s = bool(session.query(Igel).filter_by(name=name).first())
-            if s is True:
+            if name == "":
+                QMessageBox.about(ui, "Information", f"Name darf nicht leer bleiben")
+            elif s is True:
                 QMessageBox.about(ui, "Information", f"Igel mit Namen: {name} ist bereits im Datenbank!")
 
             else:

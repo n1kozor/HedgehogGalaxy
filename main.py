@@ -1,6 +1,8 @@
+import datetime
 import time
-
+from datetime import *
 from control.new_hedgehog import NewHedgehog
+import os
 import sys
 from PyQt5 import QtWidgets, uic
 from pprint import pprint
@@ -15,6 +17,8 @@ from control.update_hedgehog import UpdateHedgehog
 from control.delete_hedgehog import DeleteHedgehog
 from control.medics_hedgehog import MedicsHedgehog
 from control.diseases import Diseases
+from reportlab.pdfgen import canvas
+import webbrowser
 
 class Ui(QtWidgets.QMainWindow):
 
@@ -96,6 +100,8 @@ class Ui(QtWidgets.QMainWindow):
         self.btn_update_igel = self.findChild(QtWidgets.QPushButton, "btn_update_igel")
         self.btn_update_igel.clicked.connect(InitMethods.show_update_hedgehog_page(self))
         self.label_igel_status = self.findChild(QtWidgets.QLabel, "label_igel_status")
+        self.profil_print = self.findChild(QtWidgets.QPushButton, "profil_print")
+        self.profil_print.clicked.connect(self.print)
 
         """
                                     Igel Update Page
@@ -191,7 +197,6 @@ class Ui(QtWidgets.QMainWindow):
 
             table.setRowCount(len(medic_name_list))
             table.setColumnCount(2)
-            table.setHorizontalHeaderLabels(["Medikamente", "Datum"])
             medic_take_time_list.reverse()
             medic_name_list.reverse()
             i = 0
@@ -219,6 +224,24 @@ class Ui(QtWidgets.QMainWindow):
     def none(self):
 
         return None
+
+    def print(self):
+        now = datetime.now()
+        dt_string = now.strftime("%d_%m_%Y_%H_%M")
+        name = self.list_query_igel.currentItem().text()
+        igel = session.query(Igel).filter_by(name=name).first()
+        my_canvas = canvas.Canvas(f"pdf\igel{igel.name}_{dt_string}.pdf")
+        my_canvas.drawString(100, 750, f"{igel.name} Profil")
+        my_canvas.drawString(100, 650, f"Name: {igel.name}")
+        my_canvas.drawString(100, 600, f"Geschlecht: {igel.sex}")
+        my_canvas.drawString(100, 550, f"Alter: {igel.age} Jahre alt")
+        my_canvas.drawString(100, 500, f"Gewicht: {igel.weight} Gramm")
+        my_canvas.drawString(100, 450, f"Kontaktperson: {igel.contacts}")
+        my_canvas.drawString(100, 400, f"Fundort: {igel.local}")
+
+        my_canvas.save()
+        webbrowser.open_new(rf"pdf\igel{igel.name}_{dt_string}.pdf")
+
 
 
 

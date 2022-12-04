@@ -35,4 +35,4 @@ def init_db_medics():
 def admin_db_init():
     init_db_medics()
     init_db_diseases()
-#Base.metadata.create_all(engine)
+Base.metadata.create_all(engine)
