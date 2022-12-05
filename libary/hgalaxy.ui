@@ -1389,6 +1389,11 @@ font-size: 12px;}</string>
       </attribute>
       <column>
        <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
         <string>Medikamente</string>
        </property>
       </column>

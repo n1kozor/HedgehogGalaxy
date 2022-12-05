@@ -1,5 +1,5 @@
 from database.models import *
-
+from PyQt5.QtWidgets import QMessageBox
 
 
 
@@ -35,4 +35,5 @@ def init_db_medics():
 def admin_db_init():
     init_db_medics()
     init_db_diseases()
+
 Base.metadata.create_all(engine)

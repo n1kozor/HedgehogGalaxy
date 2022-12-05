@@ -82,9 +82,7 @@ class UpdateHedgehog:
             ui.label_query_profil_age.setText(f"{s.age} Jahre alt")
             ui.label_query_profil_weight.setText(f"{s.weight} Gramm")
             ui.label_query_profil_local.setText(s.local)
-            print(s.local)
             ui.label_query_profil_contacts.setText(s.contacts)
-            print(s.contacts)
             for i in s.diseases:
                 disease_list.append(i.name)
             for x in disease_list:

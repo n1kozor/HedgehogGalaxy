@@ -1,4 +1,3 @@
-
 from control.update_hedgehog import UpdateHedgehog
 from control.medics_hedgehog import *
 from PyQt5.QtWidgets import QMessageBox
@@ -52,8 +51,6 @@ class InitMethods:
                 ui.list_query_igel.addItem(i.name)
 
         return query_all_hedgehog_to_list_ui
-
-
 
     @staticmethod
     def show_new_hedgehog_page(ui):

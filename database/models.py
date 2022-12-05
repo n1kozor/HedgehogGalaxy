@@ -3,7 +3,22 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, backref, sessionmaker, joinedload
 from sqlalchemy.sql import func
 from sqlalchemy import create_engine
+from PyPDF2 import PdfFileWriter, PdfFileReader
+import io
+from docx import Document
+from reportlab.pdfgen import canvas
+from reportlab.pdfbase import pdfmetrics
+from reportlab.lib.pagesizes import letter
 from sqlalchemy_utils import database_exists, create_database
+from reportlab.pdfgen import canvas
+from reportlab.lib.units import inch
+from reportlab.platypus import Paragraph
+from  reportlab.lib.styles import ParagraphStyle
+from reportlab.lib.enums import TA_CENTER, TA_LEFT
+
+
+
+
 
 engine = create_engine('mysql://root:@localhost/hgalaxy')
 #engine = create_engine('sqlite:///igels.db', echo=True) #    lokal db-t csinal....................
@@ -94,3 +109,10 @@ class MedicsIgelHistroy(Base):
 
 Session = sessionmaker(bind=engine)
 session = Session()
+
+
+
+
+
+
+
