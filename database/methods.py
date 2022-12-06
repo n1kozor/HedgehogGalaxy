@@ -1,7 +1,6 @@
 from database.models import *
 
 
-
 def add_new_igel(name=str, sex=str, age=str, weight=str, description=str):
     new_igel = Igel(name=name, sex=sex, age=age, weight=weight, description=description)
     s = bool(session.query(Igel).filter_by(name=name).first())
@@ -14,9 +13,9 @@ def add_new_igel(name=str, sex=str, age=str, weight=str, description=str):
 
         return True
 
+
 def add_new_igel_to_history(name=str, sex=str, age=str, weight=str, description=str,
                             diseases=str, contacts=str):
-
     new_igel = IgelHistory(name=name, sex=sex, age=age, weight=weight, description=description,
                            diseases=diseases, contacts=contacts)
     session.add(new_igel)
@@ -35,6 +34,7 @@ def add_new_disease(name=str):
 
         return True
 
+
 #
 def take_medics(name=str, medicid=int):
     try:
@@ -45,6 +45,5 @@ def take_medics(name=str, medicid=int):
         session.add(new_medics_take)
         session.commit()
 
-    except: print("Fehler in Parameter")
-
-
+    except:
+        print("Fehler in Parameter")

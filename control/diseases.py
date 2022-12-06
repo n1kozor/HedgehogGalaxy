@@ -1,5 +1,7 @@
-from database.models import *
 from loguru import logger
+
+from database.models import *
+
 
 class Diseases:
     @staticmethod
@@ -29,22 +31,23 @@ class Diseases:
             ui.list_diseases.clear()
             ui.init_diseases_to_list()
             ui.label_disease_name.clear()
+
         return delete_disease_ui
 
     @staticmethod
-
     def add_new_disease(ui):
         def add_new_disease_ui():
-            list = ui.list_diseases
-            input = ui.in_new_disease_in_disease_page.text()
-            list.addItem(input)
-            new_disease = Disease(name=input)
+            lists = ui.list_diseases
+            inputs = ui.in_new_disease_in_disease_page.text()
+            lists.addItem(inputs)
+            new_disease = Disease(name=inputs)
             session.add(new_disease)
             session.commit()
-            ui.history_list.addItem(f"Krankheit: {input} wurde zu Datenbank hinzugefügt")
+            ui.history_list.addItem(f"Krankheit: {inputs} wurde zu Datenbank hinzugefügt")
             ui.list_diseases.clear()
             ui.init_diseases_to_list()
             ui.in_new_disease_in_disease_page.clear()
+
         return add_new_disease_ui
 
     @staticmethod
@@ -52,5 +55,5 @@ class Diseases:
         def take_disease_name_to_label_ui():
             disease_name = ui.list_dieseases.currentItem().text()
             ui.label_disease_name.setText(disease_name)
-        return take_disease_name_to_label_ui
 
+        return take_disease_name_to_label_ui

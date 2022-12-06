@@ -1,5 +1,8 @@
-from database.models import *
 from PyQt5.QtWidgets import QMessageBox
+
+from database.models import *
+
+
 class NewHedgehog:
     @staticmethod
     def save_new_igel_ui(ui):
@@ -47,14 +50,16 @@ class NewHedgehog:
                 ui.init_disease()
 
         return save_new_igel
+
     @staticmethod
-    def add_new_igel_disease(ui, list=list, input=str):
+    def add_new_igel_disease(ui):
         def add_new_igel_disease_ui():
-            list = ui.list_new_disease
-            input = ui.in_new_igel_disease.text()
-            list.addItem(input)
-            new_disease = Disease(name=input)
+            lists = ui.list_new_disease
+            inputs = ui.in_new_igel_disease.text()
+            lists.addItem(inputs)
+            new_disease = Disease(name=inputs)
             session.add(new_disease)
             session.commit()
-            ui.history_list.addItem(f"Krankheit: {input} wurde zu Datenbank hinzugefügt")
+            ui.history_list.addItem(f"Krankheit: {inputs} wurde zu Datenbank hinzugefügt")
+
         return add_new_igel_disease_ui

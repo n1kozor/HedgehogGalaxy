@@ -1,10 +1,11 @@
-from database.methods import *
 from loguru import logger
+
+from database.methods import *
 
 
 class UpdateHedgehog:
     @staticmethod
-    def update_hedgehog_profil(ui, name=str):
+    def update_hedgehog_profil(ui):
         def update_hedgehog_profil():
             try:
                 """
@@ -68,6 +69,7 @@ class UpdateHedgehog:
                 disease_list.append(i.name)
             for x in disease_list:
                 ui.list_update_diseases.addItem(x)
+
         return take_hedgehog_profil_to_update_page_ui
 
     @staticmethod
@@ -122,13 +124,12 @@ class UpdateHedgehog:
             disease_name = ui.list_update_diseases.currentItem().text()
             disease = session.query(Disease).filter_by(name=disease_name).first()
 
-
             igel.diseases.remove(disease)
             session.commit()
             listItems = ui.list_update_diseases.selectedItems()
-            if not listItems: return
+            if not listItems:
+                return
             for item in listItems:
                 ui.list_update_diseases.takeItem(ui.list_update_diseases.row(item))
 
         return delete_disease_update_ui
-

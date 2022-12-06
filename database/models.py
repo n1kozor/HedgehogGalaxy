@@ -1,27 +1,11 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, create_engine, Time, DateTime, PickleType, Table
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship, backref, sessionmaker, joinedload
-from sqlalchemy.sql import func
+from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, PickleType, Table
 from sqlalchemy import create_engine
-from PyPDF2 import PdfFileWriter, PdfFileReader
-import io
-from docx import Document
-from reportlab.pdfgen import canvas
-from reportlab.pdfbase import pdfmetrics
-from reportlab.lib.pagesizes import letter
-from sqlalchemy_utils import database_exists, create_database
-from reportlab.pdfgen import canvas
-from reportlab.lib.units import inch
-from reportlab.platypus import Paragraph
-from  reportlab.lib.styles import ParagraphStyle
-from reportlab.lib.enums import TA_CENTER, TA_LEFT
-
-
-
-
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship, sessionmaker
+from sqlalchemy.sql import func
 
 engine = create_engine('mysql://root:@localhost/hgalaxy')
-#engine = create_engine('sqlite:///igels.db', echo=True) #    lokal db-t csinal....................
+# engine = create_engine('sqlite:///igels.db', echo=True) #    lokal db-t csinal....................
 
 Base = declarative_base()
 
@@ -60,6 +44,7 @@ class Igel(Base):
     description = Column(String(255))
     status = Column(String(255))
 
+
 class IgelHistory(Base):
     __tablename__ = 'igel_history'
 
@@ -75,6 +60,7 @@ class IgelHistory(Base):
     contacts = Column(String(255))
     description = Column(String(255))
 
+
 class Disease(Base):
     __tablename__ = 'disease'
 
@@ -82,14 +68,15 @@ class Disease(Base):
     name = Column(String(255))
     igel = relationship("Igel", secondary=disease_igel, back_populates="diseases")
 
+
 class Medics(Base):
     __tablename__ = 'medics'
 
     id = Column(Integer, primary_key=True)
     name = Column(String(255))
 
-
     igel = relationship("Igel", secondary=medics_igel, back_populates="medics")
+
 
 class MedicsIgelHistroy(Base):
     __tablename__ = 'medics_igel_history'
@@ -100,19 +87,5 @@ class MedicsIgelHistroy(Base):
     take_time = Column(DateTime(timezone=True), server_default=func.now())
 
 
-
-
-
-
-
-
-
 Session = sessionmaker(bind=engine)
 session = Session()
-
-
-
-
-
-
-

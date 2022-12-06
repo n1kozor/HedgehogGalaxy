@@ -1,29 +1,40 @@
-from PyPDF2 import PdfFileWriter, PdfFileReader
 import io
-import subprocess
-from docx import Document
-from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import letter
-from datetime import *
-import qrcode
-from control.new_hedgehog import NewHedgehog
-import os
 import sys
-from PyQt5 import QtWidgets, uic
-from pprint import pprint
-from database.models import *
-from PyQt5.QtWidgets import *
-from loguru import logger
-from database.methods import *
-from database.create_db import *
-from control.new_hedgehog import NewHedgehog
-from control.init_methods import InitMethods
-from control.update_hedgehog import UpdateHedgehog
-from control.delete_hedgehog import DeleteHedgehog
-from control.medics_hedgehog import MedicsHedgehog
-from control.diseases import Diseases
-from reportlab.pdfgen import canvas
 import webbrowser
+from PyQt5 import QtWidgets, uic
+from PyQt5.QtWidgets import *
+from datetime import *
+from typing import io
+
+import qrcode
+from PyPDF2 import PdfFileWriter, PdfFileReader
+from loguru import logger
+from reportlab.lib.enums import TA_LEFT
+from reportlab.lib.pagesizes import letter
+from reportlab.lib.styles import ParagraphStyle
+from reportlab.lib.units import inch
+from reportlab.pdfgen import canvas
+from reportlab.platypus import Paragraph
+
+from control.delete_hedgehog import DeleteHedgehog
+from control.diseases import Diseases
+from control.init_methods import InitMethods
+from control.medics_hedgehog import MedicsHedgehog
+from control.new_hedgehog import NewHedgehog
+from control.update_hedgehog import UpdateHedgehog
+from database.create_db import *
+
+
+def none():
+    return None
+
+
+def make_qrcode():
+    session.query(Igel).filter_by(name="Ferike").first()
+    img = qrcode.make('Some data here')
+    type(img)
+    img.save("some_file.png")
+
 
 class Ui(QtWidgets.QMainWindow):
 
@@ -47,13 +58,11 @@ class Ui(QtWidgets.QMainWindow):
         self.init_hedgehog_list_to_medic_list = MedicsHedgehog.query_all_hedgehog_to_list_medics(self)
         self.init_hedgehog_list_to_medic_list()  # Init all hedgehog to list in medics page
 
-
         self.init_diseases_to_list = Diseases.query_all_diseases(self)
         self.init_diseases_to_list()
 
         self.init_medics_to_medics_page = InitMethods.query_all_medics_to_medics_page(self)
         self.init_medics_to_medics_page()
-
 
         self.init_list = self.findChild(QtWidgets.QListWidget, "init_list")
         self.btn_new_igel = self.findChild(QtWidgets.QPushButton, 'btn_new_igel')
@@ -70,7 +79,8 @@ class Ui(QtWidgets.QMainWindow):
         self.list_medics_new = self.findChild(QtWidgets.QListWidget, "list_medics_new")
         self.btn_delete_medic = self.findChild(QtWidgets.QPushButton, "btn_delete_medic")
         self.btn_delete_medic.clicked.connect(MedicsHedgehog.delete_medics_in_medics_page(self))
-        self.btn_add_new_medics_in_medics_page = self.findChild(QtWidgets.QPushButton, "btn_add_new_medics_in_medics_page")
+        self.btn_add_new_medics_in_medics_page = self.findChild(QtWidgets.QPushButton,
+                                                                "btn_add_new_medics_in_medics_page")
         self.btn_add_new_medics_in_medics_page.clicked.connect(MedicsHedgehog.add_new_medic_in_medic_page(self))
         self.in_new_medics_in_medics_page = self.findChild(QtWidgets.QLineEdit, "in_new_medics_in_medics_page")
 
@@ -174,12 +184,10 @@ class Ui(QtWidgets.QMainWindow):
         self.list_diseases = self.findChild(QtWidgets.QListWidget, "list_dieseases")
         self.list_diseases.clicked.connect(Diseases.take_disease_name_to_label(self))
         self.in_new_disease_in_disease_page = self.findChild(QtWidgets.QLineEdit, "in_new_disease_in_disease_page")
-        self.btn_add_new_disease_in_disease_page = self.findChild(QtWidgets.QPushButton, "btn_add_new_disease_in_disease_page")
+        self.btn_add_new_disease_in_disease_page = self.findChild(QtWidgets.QPushButton,
+                                                                  "btn_add_new_disease_in_disease_page")
         self.btn_add_new_disease_in_disease_page.clicked.connect(Diseases.add_new_disease(self))
         self.label_disease_name = self.findChild(QtWidgets.QLabel, "label_28")
-
-
-
 
         """
                                         Administrator
@@ -193,8 +201,6 @@ class Ui(QtWidgets.QMainWindow):
         self.init_list.addItem("Datenbank wird kontrolliert....")
         self.init_list.addItem("Anwendung wird initalisiert....")
         self.init_list.addItem("Keine Fehler gefunden!")
-
-
 
     def query_selected_igel_take_medics(self):
         self.list_add_medic_to_igel.setEnabled(True)
@@ -230,8 +236,8 @@ class Ui(QtWidgets.QMainWindow):
 
                 i += 1
             d = 0
-            for date in medic_take_time_list:
-                item_date = QTableWidgetItem(str(date))
+            for datee in medic_take_time_list:
+                item_date = QTableWidgetItem(str(datee))
                 table.setItem(d, 1, item_date)
 
                 d += 1
@@ -240,14 +246,6 @@ class Ui(QtWidgets.QMainWindow):
 
         except:
             print("fehler")
-
-
-    def save_new_disease(self):
-        var = None
-
-    def none(self):
-
-        return None
 
     def print(self):
 
@@ -319,18 +317,8 @@ class Ui(QtWidgets.QMainWindow):
         path = f"pdf/Report_{igel.name}_{dt_string}.pdf"
         webbrowser.open(path)
 
-    def make_qrcode(self):
-        #name = self.list_query_igel.currentItem().text()
-        igel = session.query(Igel).filter_by(name="Ferike").first()
-        img = qrcode.make('Some data here')
-        type(img)  # qrcode.image.pil.PilImage
-        img.save("some_file.png")
-
-
-
 
 logger.add("hedgehoggalaxy.log", retention="10 days")
 app = QtWidgets.QApplication(sys.argv)
 window = Ui()
 app.exec_()
-

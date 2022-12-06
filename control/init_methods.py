@@ -1,6 +1,7 @@
-from control.update_hedgehog import UpdateHedgehog
-from control.medics_hedgehog import *
 from PyQt5.QtWidgets import QMessageBox
+
+from control.medics_hedgehog import *
+from control.update_hedgehog import UpdateHedgehog
 
 
 class InitMethods:
@@ -72,6 +73,7 @@ class InitMethods:
             ui.btn_add_medic_to_selected_igel.setDisabled(True)
             ui.list_add_medic_to_igel.clear()
             ui.init_medics()
+
         return show_medics_hedgehog_page
 
     @staticmethod
@@ -86,7 +88,8 @@ class InitMethods:
                 ui.manage_pages.setCurrentIndex(3)
 
             except:
-                QMessageBox.about(ui, "Warnung", "Kein Igel ausgewählt. Sie müssen ein Igel auswählen, um sein Profil anzuzeigen!")
+                QMessageBox.about(ui, "Warnung", "Kein Igel ausgewählt. Sie müssen ein Igel auswählen, um sein Profil "
+                                                 "anzuzeigen!")
 
         return show_update_hedgehog_page_ui
 
@@ -108,6 +111,7 @@ class InitMethods:
             m = session.query(Igel).all()
             for i in m:
                 ui.list_query_igel.addItem(i.name)
+
         return show_query_hedgehog_page_ui
 
     @staticmethod
@@ -116,6 +120,7 @@ class InitMethods:
             ui.list_diseases.clear()
             ui.manage_pages.setCurrentIndex(5)
             ui.init_diseases_to_list()
+
         return show_diseases_hedgehog_page_ui
 
     @staticmethod
@@ -124,6 +129,7 @@ class InitMethods:
             ui.list_medics_new.clear()
             ui.manage_pages.setCurrentIndex(6)
             ui.init_medics_to_medics_page()
+
         return show_medics_hedgehog_page_add_new_ui
 
     @staticmethod

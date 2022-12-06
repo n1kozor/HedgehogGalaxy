@@ -34,23 +34,24 @@ class MedicsHedgehog:
             session.delete(medic)
             session.commit()
             listItems = ui.list_medics_new.selectedItems()
-            if not listItems: return
+            if not listItems:
+                return
             for item in listItems:
                 ui.list_medics_new.takeItem(ui.list_medics_new.row(item))
 
         return delete_medics_in_medics_page_ui
 
     @staticmethod
-
     def add_new_medic_in_medic_page(ui):
         def add_new_medic_in_medic_page_ui():
-            list = ui.list_medics_new
-            input = ui.in_new_medics_in_medics_page.text()
-            list.addItem(input)
-            new_medic = Medics(name=input)
+            lists = ui.list_medics_new
+            inputs = ui.in_new_medics_in_medics_page.text()
+            lists.addItem(inputs)
+            new_medic = Medics(name=inputs)
             session.add(new_medic)
             session.commit()
-            ui.history_list.addItem(f"Medikament: {input} wurde zu Datenbank hinzugefügt")
+            ui.history_list.addItem(f"Medikament: {inputs} wurde zu Datenbank hinzugefügt")
             ui.list_medics_new.clear()
             ui.init_medics_to_medics_page()
+
         return add_new_medic_in_medic_page_ui
