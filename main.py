@@ -248,74 +248,76 @@ class Ui(QtWidgets.QMainWindow):
             print("fehler")
 
     def print(self):
+        try:
+            now = datetime.now()
+            dt_string = now.strftime("%d_%m_%Y_%H_%M")
+            name = self.list_query_igel.currentItem().text()
+            igel = session.query(Igel).filter_by(name=name).first()
 
-        now = datetime.now()
-        dt_string = now.strftime("%d_%m_%Y_%H_%M")
-        name = self.list_query_igel.currentItem().text()
-        igel = session.query(Igel).filter_by(name=name).first()
+            packet = io.BytesIO()
+            doc = canvas.Canvas(packet, pagesize=letter)
+            p = ParagraphStyle('Name')
+            p.textColor = 'white'
+            p.alignment = TA_LEFT
+            p.fontSize = 35
+            p.leading = 120
 
-        packet = io.BytesIO()
-        doc = canvas.Canvas(packet, pagesize=letter)
-        p = ParagraphStyle('Name')
-        p.textColor = 'white'
-        p.alignment = TA_LEFT
-        p.fontSize = 35
-        p.leading = 120
+            para = Paragraph(f"<b>{igel.name}</b>", p)
+            para.wrapOn(doc, 500, 1200)
+            para.drawOn(doc, 0.7 * inch, 9.4 * inch)
 
-        para = Paragraph(f"<b>{igel.name}</b>", p)
-        para.wrapOn(doc, 500, 1200)
-        para.drawOn(doc, 0.7 * inch, 9.4 * inch)
+            f = ParagraphStyle('datas')
+            f.textColor = 'black'
+            f.alignment = TA_LEFT
+            f.fontSize = 18
+            f.leading = 120
+            para = Paragraph(f"<b>{igel.age}</b>", f)
+            para.wrapOn(doc, 500, 1200)
+            para.drawOn(doc, 0.7 * inch, 7.63 * inch)
 
-        f = ParagraphStyle('datas')
-        f.textColor = 'black'
-        f.alignment = TA_LEFT
-        f.fontSize = 18
-        f.leading = 120
-        para = Paragraph(f"<b>{igel.age}</b>", f)
-        para.wrapOn(doc, 500, 1200)
-        para.drawOn(doc, 0.7 * inch, 7.63 * inch)
+            para = Paragraph(f"<b>{igel.weight}</b>", f)
+            para.wrapOn(doc, 500, 1200)
+            para.drawOn(doc, 1.9 * inch, 6.728 * inch)
 
-        para = Paragraph(f"<b>{igel.weight}</b>", f)
-        para.wrapOn(doc, 500, 1200)
-        para.drawOn(doc, 1.9 * inch, 6.728 * inch)
+            para = Paragraph(f"<b>{igel.sex}</b>", f)
+            para.wrapOn(doc, 500, 1200)
+            para.drawOn(doc, 2.28 * inch, 5.9 * inch)
 
-        para = Paragraph(f"<b>{igel.sex}</b>", f)
-        para.wrapOn(doc, 500, 1200)
-        para.drawOn(doc, 2.28 * inch, 5.9 * inch)
+            para = Paragraph(f"<b>{igel.contacts}</b>", f)
+            para.wrapOn(doc, 500, 1200)
+            para.drawOn(doc, 2.71 * inch, 4.0 * inch)
 
-        para = Paragraph(f"<b>{igel.contacts}</b>", f)
-        para.wrapOn(doc, 500, 1200)
-        para.drawOn(doc, 2.71 * inch, 4.0 * inch)
+            para = Paragraph(f"<b>{igel.local}</b>", f)
+            para.wrapOn(doc, 500, 1200)
+            para.drawOn(doc, 1.87 * inch, 3.13 * inch)
 
-        para = Paragraph(f"<b>{igel.local}</b>", f)
-        para.wrapOn(doc, 500, 1200)
-        para.drawOn(doc, 1.87 * inch, 3.13 * inch)
+            para = Paragraph(f"<b>{str(igel.time_created)}</b>", f)
+            para.wrapOn(doc, 500, 1200)
+            para.drawOn(doc, 2.2 * inch, 2.24 * inch)
 
-        para = Paragraph(f"<b>{str(igel.time_created)}</b>", f)
-        para.wrapOn(doc, 500, 1200)
-        para.drawOn(doc, 2.2 * inch, 2.24 * inch)
-
-        f = ParagraphStyle('datas')
-        f.textColor = 'black'
-        f.alignment = TA_LEFT
-        f.fontSize = 10
-        f.leading = 120
-        para = Paragraph(f"<b>{igel.description}</b>", f)
-        para.wrapOn(doc, 500, 1200)
-        para.drawOn(doc, 0.7 * inch, 0.70 * inch)
-        doc.save()
-        packet.seek(0)
-        new_pdf = PdfFileReader(packet)
-        existing_pdf = PdfFileReader(open("pdf/lib/igel_profil_template.pdf", "rb"))
-        output = PdfFileWriter()
-        page = existing_pdf.getPage(0)
-        page.mergePage(new_pdf.getPage(0))
-        output.addPage(page)
-        outputStream = open(f"pdf/Report_{igel.name}_{dt_string}.pdf", "wb")
-        output.write(outputStream)
-        outputStream.close()
-        path = f"pdf/Report_{igel.name}_{dt_string}.pdf"
-        webbrowser.open(path)
+            f = ParagraphStyle('datas')
+            f.textColor = 'black'
+            f.alignment = TA_LEFT
+            f.fontSize = 10
+            f.leading = 120
+            para = Paragraph(f"<b>{igel.description}</b>", f)
+            para.wrapOn(doc, 500, 1200)
+            para.drawOn(doc, 0.7 * inch, 0.70 * inch)
+            doc.save()
+            packet.seek(0)
+            new_pdf = PdfFileReader(packet)
+            existing_pdf = PdfFileReader(open("pdf/lib/igel_profil_template.pdf", "rb"))
+            output = PdfFileWriter()
+            page = existing_pdf.getPage(0)
+            page.mergePage(new_pdf.getPage(0))
+            output.addPage(page)
+            outputStream = open(f"pdf/Report_{igel.name}_{dt_string}.pdf", "wb")
+            output.write(outputStream)
+            outputStream.close()
+            path = f"pdf/Report_{igel.name}_{dt_string}.pdf"
+            webbrowser.open(path)
+        except:
+            QMessageBox.about(self, "Information", f"Sie müssen vorher einen Igel auswählen")
 
 
 logger.add("hedgehoggalaxy.log", retention="10 days")

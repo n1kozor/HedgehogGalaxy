@@ -58,3 +58,6 @@
 2022-12-06 21:55:45.273 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: Kiara hat Entwurmung genommen!
 2022-12-06 21:56:00.538 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: Janos hat Schmerzmittel genommen!
 2022-12-06 21:56:02.525 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: Janos hat Entwurmung genommen!
+2022-12-06 22:00:52.576 | DEBUG    | __main__:__init__:200 - Programm wurde erfolgreich initialisiert.
+2022-12-06 22:01:13.055 | DEBUG    | __main__:__init__:200 - Programm wurde erfolgreich initialisiert.
+2022-12-06 22:03:01.853 | DEBUG    | __main__:__init__:200 - Programm wurde erfolgreich initialisiert.
