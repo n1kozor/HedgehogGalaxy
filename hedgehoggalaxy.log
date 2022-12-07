@@ -61,3 +61,13 @@
 2022-12-06 22:00:52.576 | DEBUG    | __main__:__init__:200 - Programm wurde erfolgreich initialisiert.
 2022-12-06 22:01:13.055 | DEBUG    | __main__:__init__:200 - Programm wurde erfolgreich initialisiert.
 2022-12-06 22:03:01.853 | DEBUG    | __main__:__init__:200 - Programm wurde erfolgreich initialisiert.
+2022-12-07 02:05:06.206 | DEBUG    | __main__:__init__:200 - Programm wurde erfolgreich initialisiert.
+2022-12-07 02:07:31.972 | DEBUG    | __main__:__init__:200 - Programm wurde erfolgreich initialisiert.
+2022-12-07 02:07:42.500 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: Janos hat Entwurmung genommen!
+2022-12-07 02:08:46.749 | DEBUG    | __main__:__init__:200 - Programm wurde erfolgreich initialisiert.
+2022-12-07 02:09:59.195 | DEBUG    | __main__:__init__:200 - Programm wurde erfolgreich initialisiert.
+2022-12-07 02:22:47.148 | DEBUG    | __main__:__init__:202 - Programm wurde erfolgreich initialisiert.
+2022-12-07 02:23:24.981 | DEBUG    | __main__:__init__:202 - Programm wurde erfolgreich initialisiert.
+2022-12-07 02:23:48.050 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: Miklos hat Schmerzmittel genommen!
+2022-12-07 02:23:48.954 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: Miklos hat Schmerzmittel genommen!
+2022-12-07 02:29:08.287 | DEBUG    | __main__:__init__:205 - Programm wurde erfolgreich initialisiert.

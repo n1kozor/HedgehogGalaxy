@@ -9,6 +9,7 @@ from typing import io
 import qrcode
 from PyPDF2 import PdfFileWriter, PdfFileReader
 from loguru import logger
+from openpyxl import Workbook
 from reportlab.lib.enums import TA_LEFT
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle
@@ -167,6 +168,8 @@ class Ui(QtWidgets.QMainWindow):
         self.list_add_medic_to_igel = self.findChild(QtWidgets.QListWidget, "list_add_medic_to_igel")
         self.btn_add_medic_to_selected_igel = self.findChild(QtWidgets.QPushButton, "btn_add_medic_to_selected_igel")
         self.btn_add_medic_to_selected_igel.clicked.connect(UpdateHedgehog.add_medic_to_hedgehog(self))
+        self.btn_del_take_medic = self.findChild(QtWidgets.QPushButton, "btn_del_take_medic")
+        self.btn_del_take_medic.clicked.connect(self.delete_selected_medic)
 
         """
                                     Status / History List LENT
@@ -188,6 +191,8 @@ class Ui(QtWidgets.QMainWindow):
                                                                   "btn_add_new_disease_in_disease_page")
         self.btn_add_new_disease_in_disease_page.clicked.connect(Diseases.add_new_disease(self))
         self.label_disease_name = self.findChild(QtWidgets.QLabel, "label_28")
+        self.btn_export_to_xlsx = self.findChild(QtWidgets.QPushButton, "btn_export_to_xlsx")
+        self.btn_export_to_xlsx.clicked.connect(self.create_excel_from_igel)
 
         """
                                         Administrator
@@ -206,42 +211,46 @@ class Ui(QtWidgets.QMainWindow):
         self.list_add_medic_to_igel.setEnabled(True)
         self.table_medics_history.setEnabled(True)
         self.btn_add_medic_to_selected_igel.setEnabled(True)
-        try:
-            table = self.table_medics_history
 
-            label = self.findChild(QtWidgets.QLabel, "label_24")
-            name = self.list_query_igel_2.currentItem().text()
-            igel = session.query(Igel).filter_by(name=name).first()
+        try:
+            # Get selected igel
+            selected_igel_name = self.list_query_igel_2.currentItem().text()
+            igel = session.query(Igel).filter_by(name=selected_igel_name).first()
+
+            # Get all medics given to the igel
             medics_ids = session.query(MedicsIgelHistroy).filter_by(igel_id=igel.id).all()
             medic_take_time_list = []
             medic_list = []
+            primary_key_list = []
             for c in medics_ids:
                 medic_list.append(c.medics_id)
                 medic_take_time_list.append(str(c.take_time))
+                primary_key_list.append(c.id)
+
+            # Get the medics name
             medic_name_list = []
             for j in medic_list:
                 medics_id_query = session.query(Medics).filter_by(id=int(j)).all()
                 for y in medics_id_query:
                     medic_name_list.append(y.name)
 
+            # Set table
+            table = self.table_medics_history
             table.setRowCount(len(medic_name_list))
-            table.setColumnCount(2)
-            table.setHorizontalHeaderLabels(["Medikamente", "Datum"])
+            table.setColumnCount(3)
+            table.setHorizontalHeaderLabels(["Medikamente", "Datum", "Primärschlüssel"])
             medic_take_time_list.reverse()
             medic_name_list.reverse()
-            i = 0
-            for name in medic_name_list:
+            primary_key_list.reverse()
+            for i, name in enumerate(medic_name_list):
                 item_name = QTableWidgetItem(name)
                 table.setItem(i, 0, item_name)
+                item_date = QTableWidgetItem(str(medic_take_time_list[i]))
+                table.setItem(i, 1, item_date)
+                item_primary_key = QTableWidgetItem(str(primary_key_list[i]))
+                table.setItem(i, 2, item_primary_key)
 
-                i += 1
-            d = 0
-            for datee in medic_take_time_list:
-                item_date = QTableWidgetItem(str(datee))
-                table.setItem(d, 1, item_date)
-
-                d += 1
-
+            label = self.findChild(QtWidgets.QLabel, "label_24")
             label.setText(igel.name)
 
         except:
@@ -318,6 +327,42 @@ class Ui(QtWidgets.QMainWindow):
             webbrowser.open(path)
         except:
             QMessageBox.about(self, "Information", f"Sie müssen vorher einen Igel auswählen")
+
+    def delete_selected_medic(self):
+        # Get selected row
+        selected_row = self.table_medics_history.currentIndex().row()
+        primary_key = self.table_medics_history.item(selected_row, 2).text()
+
+        # Delete selected medic
+        medic_delete = session.query(MedicsIgelHistroy).filter_by(id=int(primary_key)).first()
+        session.delete(medic_delete)
+        session.commit()
+
+        # Update table
+        self.query_selected_igel_take_medics()
+
+    def create_excel_from_igel(self):
+        query = session.query(Igel).all()
+        if len(query) == 0:
+            return
+
+        wb = Workbook()
+        ws = wb.active
+        ws.title = "Igel"
+
+        # write headers
+        ws.append(["ID", "Time Created", "Time Updated", "Time Igel Found", "Name", "Sex", "Age", "Weight", "Diseases",
+                   "Medics", "Diet", "Contacts", "Local", "Description", "Status"])
+
+        # write data
+        for row in query:
+            diseases = [d.name for d in row.diseases]
+            medics = [m.name for m in row.medics]
+            ws.append([row.id, row.time_created, row.time_updated, row.time_igel_found, row.name, row.sex, row.age,
+                       row.weight, ",".join(diseases), ",".join(medics), row.diet, row.contacts, row.local,
+                       row.description, row.status])
+
+        wb.save("Igel.xlsx")
 
 
 logger.add("hedgehoggalaxy.log", retention="10 days")
