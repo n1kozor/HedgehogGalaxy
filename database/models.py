@@ -4,9 +4,9 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy.sql import func
 
-engine = create_engine('mysql://root:@localhost/hgalaxy')
-# engine = create_engine('sqlite:///igels.db', echo=True) #    lokal db-t csinal....................
-
+engine = create_engine("mysql://root:@localhost/hgalaxy")
+# engine = create_engine('sqlite:///igels.db', echo=True)  # lokal db-t csinal....................
+# engine = create_engine('sqlite:///asdasd.db', echo=True)
 Base = declarative_base()
 
 disease_igel = Table(
