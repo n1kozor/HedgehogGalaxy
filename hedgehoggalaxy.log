@@ -124,3 +124,19 @@
 2022-12-10 10:49:03.872 | DEBUG    | __main__:__init__:203 - Programm wurde erfolgreich initialisiert.
 2022-12-10 10:49:42.727 | DEBUG    | __main__:__init__:196 - Programm wurde erfolgreich initialisiert.
 2022-12-10 10:50:37.579 | DEBUG    | __main__:__init__:207 - Programm wurde erfolgreich initialisiert.
+2022-12-10 10:52:29.298 | DEBUG    | __main__:__init__:204 - Programm wurde erfolgreich initialisiert.
+2022-12-11 18:52:05.381 | DEBUG    | __main__:__init__:204 - Programm wurde erfolgreich initialisiert.
+2022-12-11 18:53:12.476 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: Florian hat Entwurmung genommen!
+2022-12-11 18:53:13.627 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: Florian hat Entwurmung genommen!
+2022-12-12 12:18:59.841 | DEBUG    | __main__:__init__:204 - Programm wurde erfolgreich initialisiert.
+2022-12-12 12:19:17.075 | DEBUG    | __main__:__init__:204 - Programm wurde erfolgreich initialisiert.
+2022-12-12 12:20:54.374 | DEBUG    | __main__:__init__:207 - Programm wurde erfolgreich initialisiert.
+2022-12-12 12:21:02.432 | DEBUG    | __main__:__init__:207 - Programm wurde erfolgreich initialisiert.
+2022-12-12 12:21:09.782 | DEBUG    | __main__:__init__:207 - Programm wurde erfolgreich initialisiert.
+2022-12-12 12:22:25.640 | DEBUG    | __main__:__init__:207 - Programm wurde erfolgreich initialisiert.
+2022-12-12 12:22:32.390 | DEBUG    | __main__:__init__:207 - Programm wurde erfolgreich initialisiert.
+2022-12-12 12:22:45.432 | DEBUG    | __main__:__init__:207 - Programm wurde erfolgreich initialisiert.
+2022-12-12 12:24:36.197 | DEBUG    | __main__:__init__:207 - Programm wurde erfolgreich initialisiert.
+2022-12-12 12:25:58.175 | DEBUG    | __main__:__init__:207 - Programm wurde erfolgreich initialisiert.
+2022-12-12 12:26:10.751 | DEBUG    | __main__:__init__:207 - Programm wurde erfolgreich initialisiert.
+2022-12-12 12:27:16.162 | DEBUG    | __main__:__init__:207 - Programm wurde erfolgreich initialisiert.

@@ -1,4 +1,5 @@
 import io
+import os
 import sys
 import webbrowser
 from PyQt5 import QtWidgets, uic
@@ -63,6 +64,9 @@ class Ui(QtWidgets.QMainWindow):
 
         self.init_medics_to_medics_page = InitMethods.query_all_medics_to_medics_page(self)
         self.init_medics_to_medics_page()
+
+        self.tabWidget_navigation = self.findChild(QtWidgets.QWidget, "tabWidget_navigation")
+        self.tabWidget_navigation.setCurrentIndex(0)
 
         self.init_list = self.findChild(QtWidgets.QListWidget, "init_list")
         self.btn_new_igel = self.findChild(QtWidgets.QPushButton, 'btn_new_igel')
@@ -323,7 +327,7 @@ class Ui(QtWidgets.QMainWindow):
             output.write(outputStream)
             outputStream.close()
             path = f"pdf/Report_{igel.name}_{dt_string}.pdf"
-            webbrowser.open(path)
+            webbrowser.open('file://' + os.path.realpath(path))
         except:
             QMessageBox.about(self, "Information", f"Sie müssen vorher einen Igel auswählen")
 
