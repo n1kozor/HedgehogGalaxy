@@ -202,7 +202,7 @@ class Ui(QtWidgets.QMainWindow):
         """
 
         self.btn_admin_create_db = self.findChild(QtWidgets.QPushButton, "btn_admin_create_db")
-        self.btn_admin_create_db.clicked.connect(admin_db_init)
+        self.btn_admin_create_db.clicked.connect(DB_init.admin_db_init(self))
         self.show()
         self.setFixedSize(1379, 765)
         logger.debug("Programm wurde erfolgreich initialisiert.")

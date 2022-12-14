@@ -1,3 +1,5 @@
+from PyQt5.QtWidgets import QMessageBox
+
 from database.models import *
 
 
@@ -29,6 +31,15 @@ Base.metadata.create_all(engine)
 
 
 # Fill Tables with Medics and Diseases
-def admin_db_init():
-    init_db_medics()
-    init_db_diseases()
+class DB_init:
+    @staticmethod
+    def admin_db_init(ui):
+        def admin_db_init_ui():
+            try:
+                init_db_medics()
+                init_db_diseases()
+                QMessageBox.about(ui, "Information", f"Datenbank wurde erstellt. Bitte neu starten")
+            except:
+                QMessageBox.about(ui, "Information", f"Fehler.")
+
+        return admin_db_init_ui

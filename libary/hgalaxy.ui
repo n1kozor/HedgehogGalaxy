@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1419</width>
-    <height>808</height>
+    <width>1244</width>
+    <height>865</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -93,7 +93,7 @@ QLineEdit:focus
      <number>1</number>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="page_new_igel">
      <widget class="QLabel" name="label">
@@ -108,9 +108,6 @@ QLineEdit:focus
       <property name="font">
        <font>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-        <underline>true</underline>
        </font>
       </property>
       <property name="text">
@@ -335,7 +332,7 @@ QLineEdit:focus
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>img/icons8-save-100.png</normaloff>img/icons8-save-100.png</iconset>
+        <normaloff>C:/Users/Attila/.designer/backup/img/icons8-save-100.png</normaloff>C:/Users/Attila/.designer/backup/img/icons8-save-100.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -875,8 +872,6 @@ QLineEdit:focus
       <property name="font">
        <font>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
        </font>
       </property>
       <property name="styleSheet">
@@ -919,8 +914,6 @@ font-size: 12px;}</string>
       <property name="font">
        <font>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
        </font>
       </property>
       <property name="cursor">
@@ -938,7 +931,7 @@ font-size: 12px;}</string>
        <rect>
         <x>0</x>
         <y>10</y>
-        <width>241</width>
+        <width>291</width>
         <height>41</height>
        </rect>
       </property>
@@ -946,7 +939,7 @@ font-size: 12px;}</string>
        <string notr="true">font-size: 20px</string>
       </property>
       <property name="text">
-       <string>Hedgehog Galaxy BETA</string>
+       <string>Hedgehog Galaxy BETA 1.01</string>
       </property>
      </widget>
      <widget class="QListWidget" name="init_list">
@@ -1506,8 +1499,6 @@ font-size: 12px;}</string>
       <property name="font">
        <font>
         <pointsize>-1</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
        </font>
       </property>
       <property name="styleSheet">
@@ -1722,7 +1713,7 @@ font-size: 12px;
 }</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_1">
        <attribute name="title">
@@ -1914,10 +1905,10 @@ font-size: 12px;
    <widget class="QLabel" name="label_status">
     <property name="geometry">
      <rect>
-      <x>1170</x>
-      <y>20</y>
-      <width>151</width>
-      <height>51</height>
+      <x>1060</x>
+      <y>740</y>
+      <width>16</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
@@ -1954,7 +1945,7 @@ font-size: 12px;}</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1419</width>
+     <width>1244</width>
      <height>21</height>
     </rect>
    </property>
