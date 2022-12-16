@@ -143,3 +143,69 @@
 2022-12-14 22:56:57.326 | DEBUG    | __main__:__init__:208 - Programm wurde erfolgreich initialisiert.
 2022-12-14 23:00:16.236 | DEBUG    | __main__:__init__:208 - Programm wurde erfolgreich initialisiert.
 2022-12-14 23:00:30.230 | DEBUG    | __main__:__init__:208 - Programm wurde erfolgreich initialisiert.
+2022-12-16 20:43:04.856 | DEBUG    | __main__:__init__:208 - Programm wurde erfolgreich initialisiert.
+2022-12-16 20:43:36.752 | DEBUG    | __main__:__init__:208 - Programm wurde erfolgreich initialisiert.
+2022-12-16 20:44:40.643 | DEBUG    | __main__:__init__:208 - Programm wurde erfolgreich initialisiert.
+2022-12-16 20:48:25.558 | DEBUG    | __main__:__init__:208 - Programm wurde erfolgreich initialisiert.
+2022-12-16 20:50:50.858 | DEBUG    | __main__:__init__:208 - Programm wurde erfolgreich initialisiert.
+2022-12-16 20:53:39.637 | DEBUG    | __main__:__init__:208 - Programm wurde erfolgreich initialisiert.
+2022-12-16 20:54:19.832 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Vitamine genommen!
+2022-12-16 20:54:21.248 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Aufbaumittel genommen!
+2022-12-16 20:54:22.717 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Schmerzmittel genommen!
+2022-12-16 20:54:24.973 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Aufbaumittel genommen!
+2022-12-16 20:54:39.062 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Schmerzmittel genommen!
+2022-12-16 20:54:39.973 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Entwurmung genommen!
+2022-12-16 20:54:41.077 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Aufbaumittel genommen!
+2022-12-16 20:54:43.505 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:44.300 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:44.437 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:44.579 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:44.710 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:44.857 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:44.974 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:45.114 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:45.242 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:45.363 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:45.489 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:45.626 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:45.752 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:45.879 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:46.022 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:46.146 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:46.281 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:46.418 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:46.545 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:46.682 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:46.809 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:46.944 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:47.071 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:47.211 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:47.338 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:47.477 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:47.942 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:48.244 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:48.383 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:48.510 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:48.651 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:48.790 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:48.915 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:49.059 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:49.183 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:49.332 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:49.444 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:49.583 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:49.710 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:49.839 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:49.982 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:50.093 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:50.202 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:54.060 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Schmerzmittel genommen!
+2022-12-16 20:54:54.848 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 20:54:55.430 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Entwurmung genommen!
+2022-12-16 20:55:38.930 | DEBUG    | __main__:__init__:208 - Programm wurde erfolgreich initialisiert.
+2022-12-16 20:55:44.749 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Entwurmung genommen!
+2022-12-16 20:55:45.755 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Schmerzmittel genommen!
+2022-12-16 20:55:46.868 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Schmerzmittel genommen!
+2022-12-16 20:56:16.810 | DEBUG    | __main__:__init__:208 - Programm wurde erfolgreich initialisiert.
+2022-12-16 20:56:23.088 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Entwurmung genommen!
+2022-12-16 20:56:23.915 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!

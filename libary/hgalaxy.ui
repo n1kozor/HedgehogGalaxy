@@ -84,6 +84,14 @@ padding: 0 8px;
 selection-background-color: darkgray;
 font-size: 12px;}
 QLineEdit:focus 
+
+QTextEdit{ 
+background-color:white;
+border: 1px solid gray;
+border-radius: 10px;
+padding: 0 8px;
+selection-background-color: darkgray;
+font-size: 12px;}
 </string>
     </property>
     <property name="frameShape">
@@ -93,7 +101,7 @@ QLineEdit:focus
      <number>1</number>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="page_new_igel">
      <widget class="QLabel" name="label">
@@ -141,22 +149,6 @@ QLineEdit:focus
       </property>
       <property name="text">
        <string/>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="in_new_igel_description">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>330</y>
-        <width>311</width>
-        <height>141</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
       </property>
      </widget>
      <widget class="QLineEdit" name="in_new_igel_weight">
@@ -507,6 +499,23 @@ QLineEdit:focus
       </property>
       <property name="text">
        <string>Gramm</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="in_new_igel_description">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>330</y>
+        <width>301</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:white;
+border: 1px solid gray;
+border-radius: 10px;
+padding: 0 8px;
+font-size: 12px;</string>
       </property>
      </widget>
     </widget>
@@ -1124,22 +1133,6 @@ font-size: 12px;}</string>
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLineEdit" name="in_update_igel_description">
-      <property name="geometry">
-       <rect>
-        <x>480</x>
-        <y>50</y>
-        <width>321</width>
-        <height>131</height>
-       </rect>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-      </property>
-      <property name="readOnly">
-       <bool>false</bool>
-      </property>
-     </widget>
      <widget class="QPushButton" name="btn_delete_igel">
       <property name="geometry">
        <rect>
@@ -1169,6 +1162,9 @@ background-color: rgb(255, 112, 112)</string>
         <width>271</width>
         <height>151</height>
        </rect>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLabel" name="label_26">
@@ -1251,6 +1247,24 @@ background-color: rgb(255, 112, 112)</string>
        <string>Krankheit entfernen</string>
       </property>
      </widget>
+     <widget class="QTextEdit" name="in_update_igel_description">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>50</y>
+        <width>281</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:white;
+border: 1px solid gray;
+border-radius: 10px;
+padding: 0 8px;
+selection-background-color: darkgray;
+font-size: 12px;</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_medics_igel">
      <widget class="QPushButton" name="btn_query_all_igel_2">
@@ -1331,7 +1345,7 @@ font-size: 12px;}</string>
        <rect>
         <x>290</x>
         <y>180</y>
-        <width>361</width>
+        <width>521</width>
         <height>301</height>
        </rect>
       </property>
@@ -1452,8 +1466,8 @@ font-size: 12px;}</string>
      <widget class="QPushButton" name="btn_del_take_medic">
       <property name="geometry">
        <rect>
-        <x>660</x>
-        <y>180</y>
+        <x>680</x>
+        <y>490</y>
         <width>121</width>
         <height>31</height>
        </rect>
@@ -1713,7 +1727,7 @@ font-size: 12px;
 }</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_1">
        <attribute name="title">

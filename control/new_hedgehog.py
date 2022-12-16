@@ -11,7 +11,7 @@ class NewHedgehog:
             sex = ui.in_new_igel_sex.currentText()
             age = ui.in_new_igel_age.text()
             weight = ui.in_new_igel_weight.text()
-            description = ui.in_new_igel_description.text()
+            description = ui.in_new_igel_description.toPlainText()
             disease = ui.list_new_disease_to_igel
             local = ui.in_new_igel_local.text()
             contacts = ui.in_new_igel_contact.text()

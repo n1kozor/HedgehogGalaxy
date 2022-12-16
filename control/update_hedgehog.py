@@ -24,7 +24,7 @@ class UpdateHedgehog:
                     diseases.append(i.name)
                 igel.sex = ui.in_update_igel_sex.text()
                 igel.age = ui.in_update_igel_age.text()
-                igel.description = ui.in_update_igel_description.text()
+                igel.description = ui.in_update_igel_description.toPlainText()
                 igel.weight = ui.in_update_igel_weight.text()
                 igel.status = ui.in_update_igel_status.currentText()
 
