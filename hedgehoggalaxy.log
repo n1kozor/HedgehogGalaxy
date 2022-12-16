@@ -209,3 +209,17 @@
 2022-12-16 20:56:16.810 | DEBUG    | __main__:__init__:208 - Programm wurde erfolgreich initialisiert.
 2022-12-16 20:56:23.088 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Entwurmung genommen!
 2022-12-16 20:56:23.915 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 23:17:35.929 | DEBUG    | __main__:__init__:208 - Programm wurde erfolgreich initialisiert.
+2022-12-16 23:22:42.071 | DEBUG    | __main__:__init__:210 - Programm wurde erfolgreich initialisiert.
+2022-12-16 23:23:03.945 | DEBUG    | __main__:__init__:210 - Programm wurde erfolgreich initialisiert.
+2022-12-16 23:39:17.020 | DEBUG    | __main__:__init__:211 - Programm wurde erfolgreich initialisiert.
+2022-12-16 23:41:33.463 | DEBUG    | __main__:__init__:214 - Programm wurde erfolgreich initialisiert.
+2022-12-16 23:42:04.725 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Entwurmung genommen!
+2022-12-16 23:42:05.405 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Antibiotika genommen!
+2022-12-16 23:42:06.236 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Entwurmung genommen!
+2022-12-16 23:42:06.898 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Schmerzmittel genommen!
+2022-12-16 23:42:08.376 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Vitamine genommen!
+2022-12-16 23:42:09.580 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Schmerzmittel genommen!
+2022-12-16 23:42:10.345 | DEBUG    | control.update_hedgehog:add_medic_to_hedgehog_ui:49 - Igel: asd hat Vitamine genommen!
+2022-12-16 23:53:21.849 | DEBUG    | __main__:__init__:216 - Programm wurde erfolgreich initialisiert.
+2022-12-17 00:52:27.172 | DEBUG    | __main__:__init__:216 - Programm wurde erfolgreich initialisiert.

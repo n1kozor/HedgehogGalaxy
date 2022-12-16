@@ -62,6 +62,9 @@ class Ui(QtWidgets.QMainWindow):
         self.init_diseases_to_list = Diseases.query_all_diseases(self)
         self.init_diseases_to_list()
 
+        self.init_hedgehog_list_history = InitMethods.query_all_hedgehog_to_list_history(self)
+        self.init_hedgehog_list_history()
+
         self.init_medics_to_medics_page = InitMethods.query_all_medics_to_medics_page(self)
         self.init_medics_to_medics_page()
 
@@ -69,6 +72,8 @@ class Ui(QtWidgets.QMainWindow):
         self.tabWidget_navigation.setCurrentIndex(0)
 
         self.init_list = self.findChild(QtWidgets.QListWidget, "init_list")
+        self.btn_igel_history = self.findChild(QtWidgets.QPushButton, 'btn_igel_history')
+        self.btn_igel_history.clicked.connect(InitMethods.show_hedgehog_history_page(self))
         self.btn_new_igel = self.findChild(QtWidgets.QPushButton, 'btn_new_igel')
         self.btn_new_igel.clicked.connect(InitMethods.show_new_hedgehog_page(self))
         self.btn_query_igel = self.findChild(QtWidgets.QPushButton, 'btn_query_igel')
@@ -180,6 +185,9 @@ class Ui(QtWidgets.QMainWindow):
 
         self.history_list = self.findChild(QtWidgets.QListWidget, "history_list")
         self.history_list.setSelectionRectVisible(True)
+        self.list_igel_history = self.findChild(QtWidgets.QListWidget, "list_igel_history")
+        self.list_igel_history.itemDoubleClicked.connect(self.set_igel_to_history_table)
+        self.history_table = self.findChild(QtWidgets.QTableWidget, "history_table")
         """
                                             Diseases
         """
@@ -366,6 +374,30 @@ class Ui(QtWidgets.QMainWindow):
                        row.description, row.status])
 
         wb.save("Igel.xlsx")
+
+    def set_igel_to_history_table(self):
+        # create a QTableWidget
+        table = self.history_table
+        name = self.list_igel_history.currentItem().text()
+        # set the number of rows and columns
+        table.setRowCount(session.query(IgelHistory).count())
+        table.setColumnCount(7)
+
+        # set the headings
+        table.setHorizontalHeaderLabels(['Name', 'Sex', 'Age', 'Weight', 'Diseases', 'Diet', 'Contacts'])
+
+        # get all igel history records
+        igel_history_records = session.query(IgelHistory).filter_by(name=name).first()
+
+        # fill the table with data
+        for row, record in enumerate(igel_history_records):
+            table.setItem(row, 0, QTableWidgetItem(record.name))
+            table.setItem(row, 1, QTableWidgetItem(record.sex))
+            table.setItem(row, 2, QTableWidgetItem(record.age))
+            table.setItem(row, 3, QTableWidgetItem(record.weight))
+            table.setItem(row, 4, QTableWidgetItem(str(record.diseases)))
+            table.setItem(row, 5, QTableWidgetItem(record.diet))
+            table.setItem(row, 6, QTableWidgetItem(record.contacts))
 
 
 logger.add("hedgehoggalaxy.log", retention="10 days")

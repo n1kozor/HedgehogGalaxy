@@ -101,7 +101,7 @@ font-size: 12px;}
      <number>1</number>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>7</number>
     </property>
     <widget class="QWidget" name="page_new_igel">
      <widget class="QLabel" name="label">
@@ -1669,6 +1669,28 @@ color: white</string>
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="page">
+     <widget class="QListWidget" name="list_igel_history">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>171</width>
+        <height>471</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="history_table">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>611</width>
+        <height>471</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
    </widget>
    <widget class="QScrollArea" name="scrollArea">
     <property name="geometry">
@@ -1853,7 +1875,7 @@ font-size: 12px;
         <property name="geometry">
          <rect>
           <x>30</x>
-          <y>110</y>
+          <y>160</y>
           <width>171</width>
           <height>31</height>
          </rect>
@@ -1879,6 +1901,22 @@ font-size: 12px;
         </property>
         <property name="text">
          <string>Medikamente</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_igel_history">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>110</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="text">
+         <string>Igel History</string>
         </property>
        </widget>
       </widget>

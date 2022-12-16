@@ -54,6 +54,16 @@ class InitMethods:
         return query_all_hedgehog_to_list_ui
 
     @staticmethod
+    def query_all_hedgehog_to_list_history(ui):
+        def query_all_hedgehog_to_list_history_ui():
+            ui.list_igel_history.clear()
+            m = session.query(Igel).all()
+            for i in m:
+                ui.list_igel_history.addItem(i.name)
+
+        return query_all_hedgehog_to_list_history_ui
+
+    @staticmethod
     def show_new_hedgehog_page(ui):
         def show_new_hedgehog_page_ui():
             ui.manage_pages.setCurrentIndex(0)
@@ -62,6 +72,13 @@ class InitMethods:
             ui.init_disease()
 
         return show_new_hedgehog_page_ui
+
+    @staticmethod
+    def show_hedgehog_history_page(ui):
+        def show_hedgehog_history_page_ui():
+            ui.manage_pages.setCurrentIndex(7)
+
+        return show_hedgehog_history_page_ui
 
     @staticmethod
     def show_medics_hedgehog_page(ui):
